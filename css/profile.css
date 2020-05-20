@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300);
 
 @keyframes anim1 {
     from {
@@ -109,16 +109,13 @@ position: absolute;
 .website .webname .name {
         letter-spacing: 1px;
         text-align-last: center;
-        font-variant: small-caps;
-        text-transform: lowercase;
-        font-family: lato;
+        font-family: Ubuntu;
         font-weight: 1000;
-        font-size: 35px;
+        font-size: 25px;
         color: rgba(0,0,0, 0.5);
         
         left: 0px;
         right: 0;
-        top: -10px;
         text-align: center;
         display: inline-block;
         margin: auto;
