@@ -1,7 +1,9 @@
 var tag = document.createElement('script');
-var videoID = "5_hRB0Kj1eo"
+var videoID = "lSRKaNe7PwI"
 var videoVolume = 5
-var starttime = 23
+var starttime = 101.7 // 101.7
+var endtime = 164 //165
+var loopcount = 1;
 
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -28,6 +30,24 @@ function onPlayerReady(event) {
     event.target.seekTo(starttime);
     event.target.setVolume(videoVolume);
     event.target.setPlaybackQuality("hd1080");
+    onEndLoop(event);
+}
+
+function onEndLoop(event) {    
+    setTimeout(function() {
+        currentTime = event.target.getCurrentTime()
+        //console.log(currentTime); 
+        if (currentTime >= endtime) {
+            event.target.playVideo();
+            event.target.seekTo(starttime);
+            event.target.setVolume(videoVolume);
+        }
+        loopcount++;
+        if (loopcount < 10) {
+            onEndLoop(event);
+            loopcount = 1
+        }
+    }, 1000)
 }
 
 function onStateChanged(event) {
