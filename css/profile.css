@@ -67,11 +67,10 @@ right: 0;
 width: 150px;
 height: 150px;
 border-radius: 50%;
-border: 5px solid rgba(0,0,0, 0.2);
+border: 5px solid rgba(0,0,0, 0.5);
 margin: auto;
 text-align: center;
 display: inline-block;
-box-shadow: inset 0 0 0 1px rgba(0,0,0, 0.2);
 filter: opacity(0.75);
 transition: all 0.65s;
 transform: rotateY(360deg);
@@ -244,13 +243,14 @@ right: 0;
 }
 
 .icons {
-padding: 1%;
+padding: 0%;
 width: 300px;
 height: 25px;
 margin: auto;
-left: 0;
+left: -5px;
 right: 0;
-        top: 58px;
+        top: 70px;
+        #border: 1px solid white;
 text-align: center;
 -webkit-transform: translateY(265px);
         transform: translateY(265px);
@@ -258,7 +258,7 @@ text-align: center;
 
 hr {
 margin: 75px auto 0;
-max-width: 350px;
+max-width: 270px;
 height: 1px;
 background-color: rgba(0,0,0, 0.5);
 border: none;
