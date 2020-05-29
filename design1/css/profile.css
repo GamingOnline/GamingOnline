@@ -62,12 +62,12 @@ animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1s b
 position: absolute;
 left: 0;
 right: 0;
-        
+padding: 1.5px;
 
 width: 150px;
 height: 150px;
 border-radius: 50%;
-border: 5px solid rgba(0,0,0, 0.5);
+border: 3px solid rgba(0,0,0, 0.5);
 margin: auto;
 text-align: center;
 display: inline-block;
