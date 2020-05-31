@@ -1,0 +1,417 @@
+/*
+
+	⏤⏤⏤ Imports ⏤⏤⏤
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+
+/*
+
+	⏤⏤⏤ Base ⏤⏤⏤
+
+*/
+body {
+	background: black;
+}
+
+:root {
+	--color1: 52,52,52;
+	--color2: 44,44,44;
+	--color3: 9,9,9;
+
+	--bordercolor1: 212,48,48;
+	--bordercolor2: 216,122,0;
+	--bordercolor3: 228,201,0;
+	--bordercolor4: 55,188,55;
+	--bordercolor5: 67,67,198;
+	--bordercolor6: 155,28,245;
+	--bordercolor7: 185,2,185;
+
+  --neon-text-color: #f40;
+  --neon-border-color: #08f;
+}
+
+/*
+
+	⏤⏤⏤ Animations ⏤⏤⏤
+
+*/
+
+@keyframes rainbow {
+  12.5%, 100% {
+    border: 2px solid rgba(var(--bordercolor1),0.5);
+  }
+  25% {
+    border: 2px solid rgba(var(--bordercolor2),0.5);
+  }
+  37.5% {
+    border: 2px solid rgba(var(--bordercolor3),0.5);
+  }
+  50% {
+    border: 2px solid rgba(var(--bordercolor4),0.5);
+  }
+  62.5% {
+    border: 2px solid rgba(var(--bordercolor5),0.5);
+  }
+  75% {
+    border: 2px solid rgba(var(--bordercolor6),0.5);
+  }
+  87.5% {
+    border: 2px solid rgba(var(--bordercolor7),0.5);
+  }
+}
+@keyframes rainbow1 {
+  12.5%, 100% {
+    color: rgba(var(--bordercolor1),0.5);
+  }
+  25% {
+    color: rgba(var(--bordercolor2),0.5);
+  }
+  37.5% {
+    color: rgba(var(--bordercolor3),0.5);
+  }
+  50% {
+    color: rgba(var(--bordercolor4),0.5);
+  }
+  62.5% {
+    color: rgba(var(--bordercolor5),0.5);
+  }
+  75% {
+    color: rgba(var(--bordercolor6),0.5);
+  }
+  87.5% {
+    color: rgba(var(--bordercolor7),0.5);
+  }
+}
+@keyframes rainbow2 {
+  12.5%, 100% {
+    background-color: rgba(var(--bordercolor1),0.5);
+  }
+  25% {
+    background-color: rgba(var(--bordercolor2),0.5);
+  }
+  37.5% {
+    background-color: rgba(var(--bordercolor3),0.5);
+  }
+  50% {
+    background-color: rgba(var(--bordercolor4),0.5);
+  }
+  62.5% {
+    background-color: rgba(var(--bordercolor5),0.5);
+  }
+  75% {
+    background-color: rgba(var(--bordercolor6),0.5);
+  }
+  87.5% {
+    background-color: rgba(var(--bordercolor7),0.5);
+  }
+}
+@keyframes blink {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/*
+
+	⏤⏤⏤ CSS References ⏤⏤⏤
+
+*/
+
+.window {
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	/*border: 1px solid white;*/
+	margin: auto;
+	position: absolute;
+	width: 99%;
+	height: auto;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+  	justify-content: center;
+}
+
+.window .box {
+	padding: 1%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border: 1px solid white;
+	margin: auto;
+	width: 350px;
+	height: 450px;
+
+	border: 2px solid rgba(var(--bordercolor1),0.5);
+	background: rgba(var(--color3),0.5);
+	animation: rainbow 4500ms linear infinite alternate;
+}
+
+.window .box .picture {
+	width: 150px;
+	height: 150px;
+	padding: 1.5px;
+	left: 0;
+	right: 0;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+	margin: auto;
+
+	border-radius: 50%;
+	filter: opacity(0.5);
+	border: 2px solid rgba(var(--bordercolor1),0.5);
+	animation: rainbow 4500ms linear infinite alternate;
+}
+
+.title {
+	padding: 5px;
+	font-family: Quicksand;
+	font-size: 25px;
+	font-weight: 800;
+	text-align: center;
+	text-shadow: 1px;
+	text-align-last: center;
+	text-transform: lowercase;
+	margin: auto;
+	left: 0;
+	right: 0;
+	color: rgba(var(--bordercolor1),0.5);
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+	margin: auto;
+	text-decoration: none;
+	animation: rainbow1 4500ms linear infinite alternate;
+}
+
+.friends {
+	padding: 1%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	/*border: 1px solid white;*/
+	margin: auto;
+	width: 350px;
+	height: 140px;
+
+	display: flex;
+	flex-direction: wrap;
+	flex-wrap: wrap;
+	align-items: center;
+  	justify-content: space-between;
+}
+
+.ftext {
+	padding: 5px;
+	font-family: Quicksand;
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
+	text-shadow: 1px;
+	text-align-last: center;
+	text-transform: lowercase;
+	margin: auto;
+	left: 0;
+	right: 0;
+	color: rgba(var(--bordercolor1),0.5);
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+	margin: auto;
+	text-decoration: none;
+	animation: rainbow1 4500ms linear infinite alternate;
+	transition: top 0.5s, font-size 0.5s;
+}
+
+.ftext:hover {
+	font-size: 20px;
+	font-weight: 500;
+	text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+  	position: relative;
+  	top: -2px;
+}
+
+.text {
+	padding: 1px;
+	font-family: Quicksand;
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
+	text-shadow: 1px;
+	text-align-last: center;
+	text-transform: lowercase;
+	margin: auto;
+	left: 0;
+	right: 0;
+	color: rgba(var(--bordercolor1),0.5);
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+	margin: auto;
+	text-decoration: none;
+	animation: rainbow1 4500ms linear infinite alternate;
+}
+
+.icons {
+	padding: 1%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	/*border: 1px solid white;*/
+	margin: auto;
+	width: 350px;
+	height: 50px;
+
+	display: flex;
+	flex-direction: wrap;
+	flex-wrap: wrap;
+	align-items: center;
+  	justify-content: center;
+}
+
+.fa-steam-square {
+	padding: 5px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+   font-weight: 50;
+   font-size: 40px;
+   color: rgba(var(--bordercolor1),0,5);
+	transition: top 0.2s, font-size 0.2s;
+	animation: rainbow1 4500ms linear infinite alternate;
+}
+
+.fa-steam-square:hover {
+   font-size: 43px;
+  	top: -2px;
+  	position: relative;
+  	text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+
+.fa-twitter-square {
+	padding: 5px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+   font-weight: 50;
+   font-size: 40px;
+   color: rgba(var(--bordercolor1),0,5);
+   transition: top 0.2s, font-size 0.2s;
+   animation: rainbow1 4500ms linear infinite alternate;
+}
+
+.fa-twitter-square:hover {
+   font-size: 43px;
+  	top: -2px;
+  	position: relative;
+  	text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+
+
+.fa-snapchat-square {
+	padding: 5px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+   font-weight: 50;
+   font-size: 40px;
+   color: rgba(var(--bordercolor1),0,5);
+   transition: top 0.2s, font-size 0.2s;
+   animation: rainbow1 4500ms linear infinite alternate;
+}
+
+.fa-snapchat-square:hover {
+   font-size: 43px;
+  	top: -2px;
+  	position: relative;
+  	text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+
+
+.fa-instagram-square {
+	padding: 5px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+   font-weight: 50;
+   font-size: 40px;
+   color: rgba(var(--bordercolor1),0,5);
+   transition: top 0.2s, font-size 0.2s;
+   animation: rainbow1 4500ms linear infinite alternate;
+}
+
+.fa-instagram-square:hover {
+   font-size: 43px;
+  	top: -2px;
+  	position: relative;
+  	text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+
+
+.fa-github-square {
+	padding: 5px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+   font-weight: 50;
+   font-size: 40px;
+   color: rgba(var(--bordercolor1),0,5);
+   transition: top 0.2s, font-size 0.2s;
+   animation: rainbow1 4500ms linear infinite alternate;
+}
+
+.fa-github-square:hover {
+   font-size: 43px;
+  	top: -2px;
+  	position: relative;
+  	text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+
+
+.fa-portrait {
+	padding-top: 10px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+   font-weight: 50;
+   font-size: 40px;
+   animation: rainbow1 4500ms linear infinite alternate;
+}
+
+.border {
+	/*border: 1px solid white;*/
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: auto;
+	height: 1px;
+	background-color: rgba(var(--bordercolor1),0.5);
+	animation: rainbow2 4500ms linear infinite alternate;
+}
