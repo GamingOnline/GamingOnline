@@ -16,7 +16,7 @@ function onYouTubeIframeAPIReady()
     height: '100%',
     width: '100%',
     videoId: '' + videoID,
-    playerVars: {'showinfo': 0, 'frameborder': 0, 'allowfullscreen': '', 'loop': 1, 'autoplay': 1, 'controls': 0, 'disablekb': 1, 'modestbranding': 1, 'autohide': 1, 'playlist': videoID},
+    playerVars: {'showinfo': 0},
     events: {
         'onReady': onPlayerReady,
         'onStateChange': onStateChanged,
@@ -28,12 +28,12 @@ function onYouTubeIframeAPIReady()
 function onPlayerReady(event) {
     event.target.playVideo();
     event.target.seekTo(starttime);
-    event.target.setVolume(videoVolume);
     event.target.setPlaybackQuality("hd1080");
     onEndLoop(event);
 }
 
 function onEndLoop(event) {    
+    event.target.setVolume(videoVolume);
     setTimeout(function() {
         currentTime = event.target.getCurrentTime()
         //console.log(currentTime); 
