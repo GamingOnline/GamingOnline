@@ -31,25 +31,17 @@ if (isTouchDevice) {
     }
     var x = 0;
     var titleText = [
-        'welcome >:D',
-        'o',
-        'o_',
-        'o_O',
-        'g',
-        'ga',
-        'gam',
-        'gami',
-        'gamin',
-        'gaming',
-        '</>',
-        'gaming',
-        '</>',
-        'gaming',
-        'gamin',
-        'gami',
-        'gam',
-        'ga',
-        'g'
+        '#',
+        '#B',
+        '#BL',
+        '#BLM',
+        '✊',
+        '#BLM',
+        '✊',
+        '#BLM',
+        '#BL',
+        '#B',
+        '#'
     ];
 
     function loop() {

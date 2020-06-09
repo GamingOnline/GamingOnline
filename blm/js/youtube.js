@@ -15,10 +15,10 @@ if (isTouchDevice) {
 } else {
     console.debug("Desktop")
     var tag = document.createElement('script');
-    var videoID = "975NMwYer_A"
+    var videoID = "OLHEnHNxrhU" //OLHEnHNxrhU
     var videoVolume = 5
-    var starttime = 4 // 101.7
-    var endtime = 50 //165
+    var starttime = 7.5 // 7.5
+    var endtime = 58 //165
     var loopcount = 1
 
     tag.src = "https://www.youtube.com/iframe_api";
