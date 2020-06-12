@@ -39,8 +39,18 @@ body {
 	--bordercolor6: 155,28,245;
 	--bordercolor7: 185,2,185;
 
-  --neon-text-color: #f40;
-  --neon-border-color: #08f;
+	--neon-text-color: #f40;
+	--neon-border-color: #08f;
+
+	--rainbow-sleep: 4500ms; /* MS */
+	--friendTxt-padding: 5px; /* Padding value in friend text. */
+
+	--buttonB-color1: 0,0,0;
+	--buttonB-color2: 255,255,255;
+	--buttonB-color3: 52,50,57;
+	--buttonB-color4: 203,76,58;
+	--buttonB-color5: 96,115,182;
+	--buttonB-color6: 119,73,75;
 }
 
 /*
@@ -145,6 +155,8 @@ body {
 	flex-wrap: wrap;
 	align-items: center;
   	justify-content: center;
+
+  	user-select: none;
 }
 
 .window .box {
@@ -160,7 +172,7 @@ body {
 
 	border: 2px solid rgba(var(--bordercolor1),0.5);
 	background: rgba(var(--color3),0.5);
-	animation: rainbow 4500ms linear infinite alternate;
+	animation: rainbow var(--rainbow-sleep) linear infinite alternate;
 }
 
 .window .box .picture {
@@ -177,7 +189,7 @@ body {
 	border-radius: 50%;
 	filter: opacity(0.5);
 	border: 2px solid rgba(var(--bordercolor1),0.5);
-	animation: rainbow 4500ms linear infinite alternate;
+	animation: rainbow var(--rainbow-sleep) linear infinite alternate;
 }
 
 .title {
@@ -198,7 +210,7 @@ body {
    margin-right: auto;
 	margin: auto;
 	text-decoration: none;
-	animation: rainbow1 4500ms linear infinite alternate;
+	animation: rainbow1 var(--rainbow-sleep) linear infinite alternate;
 }
 
 .friends {
@@ -220,7 +232,7 @@ body {
 }
 
 .ftext {
-	padding: 5px;
+	padding: var(--friendTxt-padding);
 	font-family: Quicksand;
 	font-size: 20px;
 	font-weight: 300;
@@ -237,7 +249,7 @@ body {
    margin-right: auto;
 	margin: auto;
 	text-decoration: none;
-	animation: rainbow1 4500ms linear infinite alternate;
+	animation: rainbow1 var(--rainbow-sleep) linear infinite alternate;
 	transition: top 0.5s, font-size 0.5s;
 }
 
@@ -267,7 +279,7 @@ body {
    margin-right: auto;
 	margin: auto;
 	text-decoration: none;
-	animation: rainbow1 4500ms linear infinite alternate;
+	animation: rainbow1 var(--rainbow-sleep) linear infinite alternate;
 }
 
 .icons {
@@ -299,7 +311,7 @@ body {
    font-size: 40px;
    color: rgba(var(--bordercolor1),0,5);
 	transition: top 0.2s, font-size 0.2s;
-	animation: rainbow1 4500ms linear infinite alternate;
+	animation: rainbow1 var(--rainbow-sleep) linear infinite alternate;
 }
 
 .fa-steam-square:hover {
@@ -320,7 +332,7 @@ body {
    font-size: 40px;
    color: rgba(var(--bordercolor1),0,5);
    transition: top 0.2s, font-size 0.2s;
-   animation: rainbow1 4500ms linear infinite alternate;
+   animation: rainbow1 var(--rainbow-sleep) linear infinite alternate;
 }
 
 .fa-twitter-square:hover {
@@ -342,7 +354,7 @@ body {
    font-size: 40px;
    color: rgba(var(--bordercolor1),0,5);
    transition: top 0.2s, font-size 0.2s;
-   animation: rainbow1 4500ms linear infinite alternate;
+   animation: rainbow1 var(--rainbow-sleep) linear infinite alternate;
 }
 
 .fa-snapchat-square:hover {
@@ -364,7 +376,7 @@ body {
    font-size: 40px;
    color: rgba(var(--bordercolor1),0,5);
    transition: top 0.2s, font-size 0.2s;
-   animation: rainbow1 4500ms linear infinite alternate;
+   animation: rainbow1 var(--rainbow-sleep) linear infinite alternate;
 }
 
 .fa-instagram-square:hover {
@@ -386,7 +398,7 @@ body {
    font-size: 40px;
    color: rgba(var(--bordercolor1),0,5);
    transition: top 0.2s, font-size 0.2s;
-   animation: rainbow1 4500ms linear infinite alternate;
+   animation: rainbow1 var(--rainbow-sleep) linear infinite alternate;
 }
 
 .fa-github-square:hover {
@@ -406,7 +418,7 @@ body {
 	margin: auto;
    font-weight: 50;
    font-size: 40px;
-   animation: rainbow1 4500ms linear infinite alternate;
+   animation: rainbow1 var(--rainbow-sleep) linear infinite alternate;
 }
 
 .border {
@@ -419,5 +431,134 @@ body {
 	width: auto;
 	height: 1px;
 	background-color: rgba(var(--bordercolor1),0.5);
-	animation: rainbow2 4500ms linear infinite alternate;
+	animation: rainbow2 var(--rainbow-sleep) linear infinite alternate;
+}
+
+/*
+	⏤⏤⏤ ʙᴀᴄᴋ ʙᴜᴛᴛᴏɴ ⏤⏤⏤
+*/
+
+.buttonB_Base {
+	position: fixed;
+	height: 30px;
+	width: auto;
+
+	margin: auto;
+
+	/*border: 1px solid white;*/
+
+	left: 7px;
+	bottom: 7px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+  	justify-content: center;
+}
+
+.buttonB_Base .buttonB_back {
+	height: 25px;
+	width: 70px;
+
+	background: rgba(var(--buttonB-color1),1);
+	border: 1px solid rgba(var(--buttonB-color2),1);
+
+	transition: border-radius 0.5s, border 0.5s;
+	filter: opacity(0.5);
+}
+
+.buttonB_Base .buttonB_back:hover {
+	border: 1px solid rgba(var(--buttonB-color5),1);
+}
+
+.buttonB_Base .buttonB_back .buttonB_text {
+	font-family: Quicksand;
+	font-size: 20px;
+	font-weight: 500;
+	text-align: center;
+	text-shadow: 1px;
+	text-transform: lowercase;
+	text-align-last: center;
+	margin: auto;
+	left: 0;
+	right: 0;
+	color: rgba(var(--buttonB-color2),1);
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+	margin: auto;
+	text-decoration: none;
+	user-select: none;
+}
+
+.buttonB_Base .buttonB_mute {
+	height: 25px;
+	width: 25px;
+
+	background: rgba(var(--buttonB-color1),1);
+	border: 1px solid rgba(var(--buttonB-color2),1);
+
+	transition: border-radius 0.5s, border 0.5s;
+	filter: opacity(0.5);
+
+}
+
+.buttonB_Base .buttonB_mute:hover {
+	border: 1px solid rgba(var(--buttonB-color5),1);
+}
+
+.fa-volume-mute {
+	padding: 3px;
+   font-weight: 50;
+   font-size: 18px;
+   color: rgba(var(--buttonB-color2),1);
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+	margin: auto;
+	text-decoration: none;
+	margin: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	text-shadow: 1px;
+	text-transform: lowercase;
+	text-align-last: center;
+	user-select: none;
+}
+
+.buttonB_Base .buttonB_unmute {
+	height: 25px;
+	width: 25px;
+
+	background: rgba(var(--buttonB-color1),1);
+	border: 1px solid rgba(var(--buttonB-color2),1);
+
+	transition: border-radius 0.5s, border 0.5s;
+	filter: opacity(0.5);
+}
+
+.buttonB_Base .buttonB_unmute:hover {
+	border: 1px solid rgba(var(--buttonB-color5),1);
+}
+
+.fa-volume-up {
+	padding: 3px;
+   font-weight: 50;
+   font-size: 18px;
+   color: rgba(var(--buttonB-color2),1);
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+	margin: auto;
+	text-decoration: none;
+	margin: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	text-shadow: 1px;
+	text-transform: lowercase;
+	text-align-last: center;
+	user-select: none;
 }

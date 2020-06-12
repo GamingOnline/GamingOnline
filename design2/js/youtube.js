@@ -46,17 +46,20 @@ if (isTouchDevice) {
         event.target.seekTo(starttime);
         event.target.setPlaybackQuality("hd1080");
         onEndLoop(event);
+        onStarted(event);
     }
 
-    function onEndLoop(event) {    
+    function onStarted(event) {
         event.target.setVolume(videoVolume);
+    }
+
+    function onEndLoop(event) {
         setTimeout(function() {
             currentTime = event.target.getCurrentTime()
             //console.log(currentTime); 
             if (currentTime >= endtime) {
                 event.target.playVideo();
                 event.target.seekTo(starttime);
-                event.target.setVolume(videoVolume);
             }
             loopcount++;
             if (loopcount < 10) {
@@ -71,17 +74,16 @@ if (isTouchDevice) {
             case 0:
                 event.target.playVideo();
                 event.target.seekTo(starttime);
-                event.target.setVolume(videoVolume);
                 event.target.setPlaybackQuality("hd1080");
-                break;
+            break;
             case 1:
-                break;
+            break;
             case 2:
-                break;
+            break;
             case 3:
-                break;
+            break;
             case 5:
-                break;
+            break;
         }
     }
 
@@ -89,21 +91,21 @@ if (isTouchDevice) {
         switch (event.data) {
             case "small":
                 event.target.setPlaybackQuality("hd1080");
-                break;
+            break;
             case "medium":
                 event.target.setPlaybackQuality("hd1080");
-                break;
+            break;
             case "large":
                 event.target.setPlaybackQuality("hd1080");
-                break;
+            break;
             case "hd720":
                 event.target.setPlaybackQuality("hd1080");
-                break;
+            break;
             case "hd1080":
-                break;
+            break;
             case "highres":
                 event.target.setPlaybackQuality("hd1080");
-                break;
+            break;
         }
     }
 }

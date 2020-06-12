@@ -13,12 +13,12 @@
 
         <script type="text/javascript" src="home/js/youtube.js"></script>
         <script type="text/javascript" src="home/js/title.js"></script>
+        <script type="text/javascript" src="home/js/media_buttons.js"></script>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     </head>
     <body>
         <div id="player"></div>
-        <a class="text_bottom">Gaming#0394</a>
         <div id="playerHover"></div>
         <br />
         <a class="title_main">BLM</a>
@@ -30,7 +30,7 @@
                 </div>
                 <div class="bordersep"></div>
                 <div class="icons">
-                    <a href="blm" target="_blank"><i class="fas fa-fist-raised"></i></a>
+                    <a href="blm" target="_parent"><i class="fas fa-fist-raised"></i></a>
                 </div>
             </div>
         </div>
@@ -60,7 +60,7 @@
                 </div>
                 <div class="bordersep"></div>
                 <div class="icons">
-                    <a href="design1" target="_blank"><i class="fas fa-file"></i></a>
+                    <a href="design1" target="_parent"><i class="fas fa-file"></i></a>
                     <a href="https://github.com/GamingOnline/gamingonline.github.io/tree/master/design1" target="_blank"><i class="fas fa-file-code"></i></a>
                     <a href="https://github.com/GamingOnline/gamingonline.github.io" target="_blank"><i class="fas fa-file-alt"></i></a>
                 </div>
@@ -74,7 +74,7 @@
                 </div>
                 <div class="bordersep"></div>
                 <div class="icons">
-                    <a href="design2" target="_blank"><i class="fas fa-file"></i></a>
+                    <a href="design2" target="_parent"><i class="fas fa-file"></i></a>
                     <a href="https://github.com/GamingOnline/gamingonline.github.io/tree/master/design2" target="_blank"><i class="fas fa-file-code"></i></a>
                     <a href="https://github.com/GamingOnline/gamingonline.github.io" target="_blank"><i class="fas fa-file-alt"></i></a>
                 </div>
@@ -82,5 +82,29 @@
         </div>
         <br />
         <br />
+        <br />
+        <div id="footer" class="footer">
+            <div class="footer_sep">
+                <div class="footer_ico">
+                    <a href="https://steamcommunity.com/id/GamingOnline/" target="_blank"><i class="fab fa-steam-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-snapchat-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>
+                    <a href="https://github.com/GamingOnline" target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a href="https://discord.gg/KdTCyFv" target="_blank"><i class="fas fa-envelope-square"></i></a>
+                    <a class="text_bottom">Designed By Gaming#0394</a>
+                </div>
+            </div>
+        </div>
+        <div id="buttonB_Base" class="buttonB_Base">
+            <div onclick="buttonB_mute()" class="buttonB_mute">
+              <i class="fas fa-volume-mute"></i>
+            </div>
+            &nbsp;
+            <div onclick="buttonB_unmute()" class="buttonB_unmute">
+              <i class="fas fa-volume-up"></i>
+            </div>
+        </div>
     </body>
+    <script type="text/javascript" src="home/js/function_library.js"></script>
 </html>

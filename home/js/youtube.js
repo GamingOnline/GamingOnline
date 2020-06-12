@@ -15,11 +15,11 @@ if (isTouchDevice) {
 } else {
     console.debug("Desktop")
     var tag = document.createElement('script');
-    var videoID = "Lx1iH8DgrLE"
+    var videoID = "tn61L_akLYc"
     var videoVolume = 5
-    var starttime = 72 // 101.7
-    var endtime = 175 //165
-    var loopcount = 1;
+    var starttime = 12.5 // 101.7
+    var endtime = 153 //165
+    var loopcount = 1
 
     tag.src = "https://www.youtube.com/iframe_api";
     var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -46,17 +46,20 @@ if (isTouchDevice) {
         event.target.seekTo(starttime);
         event.target.setPlaybackQuality("hd1080");
         onEndLoop(event);
+        onStarted(event);
     }
 
-    function onEndLoop(event) {    
+    function onStarted(event) {
         event.target.setVolume(videoVolume);
+    }
+
+    function onEndLoop(event) {
         setTimeout(function() {
             currentTime = event.target.getCurrentTime()
             //console.log(currentTime); 
             if (currentTime >= endtime) {
                 event.target.playVideo();
                 event.target.seekTo(starttime);
-                event.target.setVolume(videoVolume);
             }
             loopcount++;
             if (loopcount < 10) {
@@ -71,17 +74,16 @@ if (isTouchDevice) {
             case 0:
                 event.target.playVideo();
                 event.target.seekTo(starttime);
-                event.target.setVolume(videoVolume);
                 event.target.setPlaybackQuality("hd1080");
-                break;
+            break;
             case 1:
-                break;
+            break;
             case 2:
-                break;
+            break;
             case 3:
-                break;
+            break;
             case 5:
-                break;
+            break;
         }
     }
 
@@ -89,21 +91,21 @@ if (isTouchDevice) {
         switch (event.data) {
             case "small":
                 event.target.setPlaybackQuality("hd1080");
-                break;
+            break;
             case "medium":
                 event.target.setPlaybackQuality("hd1080");
-                break;
+            break;
             case "large":
                 event.target.setPlaybackQuality("hd1080");
-                break;
+            break;
             case "hd720":
                 event.target.setPlaybackQuality("hd1080");
-                break;
+            break;
             case "hd1080":
-                break;
+            break;
             case "highres":
                 event.target.setPlaybackQuality("hd1080");
-                break;
+            break;
         }
     }
 }
