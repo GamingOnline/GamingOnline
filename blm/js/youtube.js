@@ -15,10 +15,10 @@ if (isTouchDevice) {
 } else {
     console.debug("Desktop")
     var tag = document.createElement('script');
-    var videoID = "OLHEnHNxrhU" //OLHEnHNxrhU
+    var videoID = "8sL-JncV-T8" //OLHEnHNxrhU
     var videoVolume = 5
-    var starttime = 7.5 // 7.5
-    var endtime = 58 //165
+    var starttime = 0 // 7.5
+    var endtime = 25 //165
     var loopcount = 1
 
     tag.src = "https://www.youtube.com/iframe_api";
@@ -32,7 +32,7 @@ if (isTouchDevice) {
         height: '100%',
         width: '100%',
         videoId: '' + videoID,
-        playerVars: {'showinfo': 0},
+        playerVars: {'showinfo': 0, 'playlist': videoID, 'controls': 0},
         events: {
             'onReady': onPlayerReady,
             'onStateChange': onStateChanged,
@@ -50,7 +50,7 @@ if (isTouchDevice) {
     }
 
     function onStarted(event) {
-        event.target.setVolume(videoVolume);
+        event.target.setVolume(volumeSlider.value);
     }
 
     function onEndLoop(event) {

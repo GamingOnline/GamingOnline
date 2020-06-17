@@ -13,7 +13,6 @@
 
         <script type="text/javascript" src="error/js/youtube.js"></script>
         <script type="text/javascript" src="error/js/title.js"></script>
-        <script type="text/javascript" src="error/js/media_buttons.js"></script>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     </head>
@@ -42,19 +41,30 @@
                 </div>
             </div>
         </div>
-        <div class="buttonB_Base">
+        <div id="buttonB_Base" class="buttonB_Base">
             <div onclick="buttonB_Landing()" class="buttonB_back">
               <a class="buttonB_text">Back</a>
             </div>
             &nbsp;
-            <div onclick="buttonB_mute()" class="buttonB_mute">
+            &nbsp;
+            <div id="slidecontainer" class="slidecontainer">
+              <input type="range" min="0" max="100" value="5" class="slider" id="volumeSlider">
+            </div>
+            &nbsp;
+            <div onclick="buttonB_muteVideo()" id="muteB" class="buttonB_b">
               <i class="fas fa-volume-mute"></i>
             </div>
             &nbsp;
-            <div onclick="buttonB_unmute()" class="buttonB_unmute">
-              <i class="fas fa-volume-up"></i>
+            &nbsp;
+            <div onclick="buttonB_disableVideo()" id="disableV" class="buttonB_b">
+              <i class="fas fa-video-slash"></i>
+            </div>
+            &nbsp;
+            <div onclick="buttonB_enableVideo()" id="enableV" class="buttonB_b">
+              <i class="fas fa-video"></i>
             </div>
         </div>
     </body>
-    <script type="text/javascript" src="home/js/function_library.js"></script>
+    <script type="text/javascript" src="error/js/function_library.js"></script>
+    <script type="text/javascript" src="error/js/media_buttons.js"></script>
 </html>

@@ -16,7 +16,6 @@ if (isTouchDevice) {
     console.debug("Desktop")
     var tag = document.createElement('script');
     var videoID = "tn61L_akLYc"
-    var videoVolume = 5
     var starttime = 12.5 // 101.7
     var endtime = 153 //165
     var loopcount = 1
@@ -32,7 +31,7 @@ if (isTouchDevice) {
         height: '100%',
         width: '100%',
         videoId: '' + videoID,
-        playerVars: {'showinfo': 0},
+        playerVars: {'showinfo': 0, 'playlist':videoID, 'controls': 0},
         events: {
             'onReady': onPlayerReady,
             'onStateChange': onStateChanged,
@@ -50,7 +49,7 @@ if (isTouchDevice) {
     }
 
     function onStarted(event) {
-        event.target.setVolume(videoVolume);
+        event.target.setVolume(volumeSlider.value);
     }
 
     function onEndLoop(event) {

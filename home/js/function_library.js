@@ -12,8 +12,10 @@ deviceAgent.match(/bada/i));
 
 if (isTouchDevice) {
     console.debug("Mobile")
-    this["footer"].remove();
-    this["buttonB_Base"].remove();
+    this["slidecontainer"].remove();
+    this["muteB"].remove();
+    this["disableV"].remove();
+    this["enableV"].remove();
 } else {
     console.debug("Desktop")
 }

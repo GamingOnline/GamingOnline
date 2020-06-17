@@ -13,7 +13,6 @@
 
         <script type="text/javascript" src="home/js/youtube.js"></script>
         <script type="text/javascript" src="home/js/title.js"></script>
-        <script type="text/javascript" src="home/js/media_buttons.js"></script>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     </head>
@@ -79,6 +78,34 @@
                     <a href="https://github.com/GamingOnline/gamingonline.github.io" target="_blank"><i class="fas fa-file-alt"></i></a>
                 </div>
             </div>
+
+            <div class="window">
+                <img class="picture" src="home/content/Logo.jpg" style="filter: grayscale(100%) opacity(0.5);" />
+                <div class="titlewindow">
+                    <a class="title">Design #3</a>
+                    <a class="title">(6/16/2020)</a>
+                </div>
+                <div class="bordersep"></div>
+                <div class="icons">
+                    <a href="design3" target="_parent"><i class="fas fa-file"></i></a>
+                    <a href="https://github.com/GamingOnline/gamingonline.github.io/tree/master/design3" target="_blank"><i class="fas fa-file-code"></i></a>
+                    <a href="https://github.com/GamingOnline/gamingonline.github.io" target="_blank"><i class="fas fa-file-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="window">
+                <img class="picture" src="https://i.imgur.com/nnUzU5c.png" />
+                <div class="titlewindow">
+                    <a class="title">House Lannisters</a>
+                    <a class="title">(6/16/2020)</a>
+                </div>
+                <div class="bordersep"></div>
+                <div class="icons">
+                    <a href="lannister" target="_parent"><i class="fas fa-file"></i></a>
+                    <a href="https://github.com/GamingOnline/gamingonline.github.io/tree/master/lannister" target="_blank"><i class="fas fa-file-code"></i></a>
+                    <a href="https://github.com/GamingOnline/gamingonline.github.io" target="_blank"><i class="fas fa-file-alt"></i></a>
+                </div>
+            </div>
         </div>
         <br />
         <br />
@@ -97,14 +124,24 @@
             </div>
         </div>
         <div id="buttonB_Base" class="buttonB_Base">
-            <div onclick="buttonB_mute()" class="buttonB_mute">
+            <div id="slidecontainer" class="slidecontainer">
+              <input type="range" min="0" max="100" value="5" class="slider" id="volumeSlider">
+            </div>
+            &nbsp;
+            <div onclick="buttonB_muteVideo()" id="muteB" class="buttonB_b">
               <i class="fas fa-volume-mute"></i>
             </div>
             &nbsp;
-            <div onclick="buttonB_unmute()" class="buttonB_unmute">
-              <i class="fas fa-volume-up"></i>
+            &nbsp;
+            <div onclick="buttonB_disableVideo()" id="disableV" class="buttonB_b">
+              <i class="fas fa-video-slash"></i>
+            </div>
+            &nbsp;
+            <div onclick="buttonB_enableVideo()" id="enableV" class="buttonB_b">
+              <i class="fas fa-video"></i>
             </div>
         </div>
     </body>
     <script type="text/javascript" src="home/js/function_library.js"></script>
+    <script type="text/javascript" src="home/js/media_buttons.js"></script>
 </html>

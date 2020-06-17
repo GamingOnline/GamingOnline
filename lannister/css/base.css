@@ -1,5 +1,5 @@
 /*****************************************************************
-	➤ ᴛɪᴛʟᴇ: ʟᴀɴᴅɪɴɢ ᴘᴀɢᴇ
+	➤ ᴛɪᴛʟᴇ: ʜᴏᴜsᴇ ʟᴀɴɴɪsᴛᴇʀs
 
 	➤ sᴛᴇᴀᴍɪᴅ: STEAM_0:0:81603889
 	➤ sᴛᴇᴀᴍɪᴅ𝟹: [U:1:163207778]
@@ -9,19 +9,24 @@
 	➤ ɢɪᴛʟᴀʙ: gitlab.com/Saskatchewan
 	➤ ɢɪᴛʜᴜʙ: github.com/GamingOnline
 
-	➤ ᴅᴇᴠᴇʟᴏᴘᴇʀs: ɢᴀᴍɪɴɢ
+	➤ ᴅᴇᴠᴇʟᴏᴘᴇʀs: ɢᴀᴍɪɴɢ, sᴅʀ
 *****************************************************************/
 
 /*
 	⏤⏤⏤ ɪᴍᴘᴏʀᴛs ⏤⏤⏤
 */
 
-@import url(https://fonts.googleapis.com/css?family=Quicksand);
-
 
 /*
 	⏤⏤⏤ ʙᴀsᴇ ⏤⏤⏤
 */
+
+@font-face {
+   font-family: 'EnchantedLand';
+   font-style: normal;
+   font-weight: 500;
+   src: local('EnchantedLand'), url('EnchantedLand.otf') format('opentype');
+}
 
 body {
 	background: black;
@@ -30,16 +35,9 @@ body {
 :root {
 	--color3: 255,255,255;
 	--color4: 255,255,255;
-	--color5: 0,0,0;
+	--color5: 10,10,10;
 
 	--base-color1: 96,115,182;
-
-	--buttonB-color1: 0,0,0;
-	--buttonB-color2: 255,255,255;
-	--buttonB-color3: 52,50,57;
-	--buttonB-color4: 203,76,58;
-	--buttonB-color5: 96,115,182;
-	--buttonB-color6: 119,73,75;
 
 	--bordercolor1: 212,48,48;
 	--bordercolor2: 216,122,0;
@@ -48,11 +46,41 @@ body {
 	--bordercolor5: 67,67,198;
 	--bordercolor6: 155,28,245;
 	--bordercolor7: 185,2,185;
+
+	--buttonB-color1: 0,0,0;
+	--buttonB-color2: 255,255,255;
+	--buttonB-color3: 52,50,57;
+	--buttonB-color4: 203,76,58;
+	--buttonB-color5: 96,115,182;
+	--buttonB-color6: 119,73,75;
+
+	--lannister: 153,31,18;
+	--lannister2: 202,180,134;
+
+	--fade-sleep: 2200ms; /* MS */
 }
 
 /*
 	⏤⏤⏤ ᴀɴɪᴍᴀᴛɪᴏɴs ⏤⏤⏤
 */
+
+@keyframes fade {
+  0% {
+    filter: opacity(1);
+  }
+  100% {
+    filter: opacity(0);
+  }
+}
+
+@keyframes unfade {
+  0% {
+    filter: opacity(0);
+  }
+  100% {
+    filter: opacity(1);
+  }
+}
 
 
 /*
@@ -60,217 +88,187 @@ body {
 */
 
 .border {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: center;
-  	justify-content: center;
 	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 0;
-	margin: auto;
 	/*border: 1px solid white;*/
-	height: auto;
+	margin: auto;
 	width: 99%;
-}
+	height: 99%;
 
-.window {
-	padding: 0.5%;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-
-	margin: auto;
-
-	/*border: 1px solid white;*/
-	margin: 10px;
-	height: 320px;
-	width: 280px;
-
-	border: 1px solid rgba(var(--color4),0.5);
-	background: rgba(var(--color5),0.5);
-
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	display: block;
 	align-items: center;
   	justify-content: center;
+
+  	transform: scale(1.01,1.01);
 
   	user-select: none;
+
 }
 
-.title {
-	font-family: Quicksand;
-	font-size: 50px;
-	font-weight: 500;
-	text-align: center;
-	text-shadow: 1px;
-	margin: auto;
-	left: 0;
-	right: 0;
-	color: rgba(var(--color3),1);
-
-	height: auto;
-	width: 100%;
-
-	filter: opacity(0.5);
-
-	user-select: none;
-}
-
-.text {
-	font-family: Quicksand;
-	font-size: 20px;
-	font-weight: 500;
-	text-align: center;
-	text-shadow: 1px;
-	margin: auto;
-	left: 0;
-	right: 0;
-	color: rgba(var(--color3),1);
-
-	height: auto;
-	width: 100%;
-
-	filter: opacity(0.5);
-
-	user-select: none;
-}
-
-.text_bottom {
+.logo_Start {
 	position: absolute;
-	display: block;
-	/*border: 1px solid white;*/
-
-	font-family: Quicksand;
-	font-size: 20px;
-	font-weight: 500;
-	text-shadow: 1px;
-	text-align: center;
 	margin: auto;
+
+	width: 400px;
+	height: 400px;
+
 	left: 0;
 	right: 0;
-	bottom: 5px;
-	color: rgba(var(--color3),1);
-   display: block;
-	text-decoration: none;
-
-	filter: opacity(0.5);
-
-	user-select: none;
-}
-
-.footer {
-	position: absolute;
-	/*border: 1px solid white;*/
-	left: 0;
-	right: 0;
+	top: 0;
 	bottom: 0;
-	margin: auto;
-	width: auto;
-	height: 90px;
-	border-top: 1px solid rgba(var(--color4),1);
-	background: rgba(var(--color5),1);
 
-	filter: opacity(0.5);
+	filter: opacity(0);
+
+	animation: fade 4000ms linear 0s;
 }
 
-.footer_sep {
+.top_page1 {
+	position: absolute;
+	margin: auto;
+
+	width: auto;
+	height: 100px;
+
+	top: 90px;
+	left: 0;
+	right: 0;
+
 	/*border: 1px solid white;*/
+
+	display: block;
+
+	filter: opacity(0);
+
+	animation: unfade 1550ms linear both;
+	animation-delay: 5s;
+
+	align-items: center;
+  	justify-content: center;
+
+	/*border: 1px solid white;*/
+}
+
+.logo_Main {
+	display: block;
+	margin: auto;
+   margin-left: auto;
+   margin-right: auto;
+
+	width: 200px;
+	height: 200px;
+
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.top_Title {
+	padding-top: 10px;
+	font-family: 'EnchantedLand';
+	font-size: 40px;
+	font-weight: 500;
+	text-align: center;
+	text-shadow: 1px;
+	text-align-last: center;
+	text-transform: uppercase;
+	margin: auto;
+	left: 0;
+	right: 0;
+	color: rgba(var(--lannister),1);
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+	margin: auto;
+	text-decoration: none;
+	transition: top 0.5s, font-size 0.5s;
+}
+
+.top_Text {
+	font-family: 'EnchantedLand';
+	font-size: 25px;
+	font-weight: 500;
+	text-align: center;
+	text-shadow: 1px;
+	text-align-last: center;
+	text-transform: uppercase;
+	margin: auto;
+	left: 0;
+	right: 0;
+	color: rgba(var(--lannister),1);
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+	margin: auto;
+	text-decoration: none;
+	transition: top 0.5s, font-size 0.5s;
+}
+
+.top_page2 {
+	position: absolute;
+	margin: auto;
+
+	width: auto;
+	height: 100px;
+
+	top: 370px;
+	left: 0;
+	right: 0;
+
+	display: block;
+
+	/*border: 1px solid white;*/
+
+	filter: opacity(0);
+
+	animation: unfade 1550ms linear both;
+	animation-delay: 5s;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+  	justify-content: center;
+
+	/*border: 1px solid white;*/
+}
+
+#ico {
+	padding: 5px;
 	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 0;
 	margin: auto;
-	width: 300px;
-	height: 1px;
+   font-weight: 50;
+   font-size: 50px;
+   color: rgba(var(--lannister),1);
+   background: rgba(var(--lannister2), 1);
+   border-left: 1px solid rgba(var(--lannister), 1);
+   border-right: 1px solid rgba(var(--lannister), 1);
+	transition: font-size 0.2s;
 }
 
-.footer_ico {
-	height: 20px;
-	width: auto;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: center;
-  	justify-content: space-evenly;
-
-  	/*border: 1px solid white;*/
+#ico:hover {
+   font-size: 54px;
 }
 
-.fa-envelope-square {
-	padding-top: 15px;
-	font-weight: 500;
-	font-size: 45px;
-	color: rgba(var(--color3),0.5);
-	transition: color 0.5s;
-}
+.roster {
+	position: absolute;
+	margin: auto;
+	display: block;
 
-.fa-envelope-square:hover {
-	color: rgba(var(--base-color1),1);
-}
+	width: 1000px;
+	height: 700px;
 
-.fa-steam-square {
-	padding-top: 15px;
-	font-weight: 500;
-	font-size: 45px;
-	color: rgba(var(--color3),0.5);
-	transition: color 0.5s;
-}
+	background: rgba(var(--lannister),1);
+	border: 5px solid rgba(var(--lannister),1);
 
-.fa-steam-square:hover {
-	color: rgba(var(--base-color1),1);
-}
-
-.fa-twitter-square {
-	padding-top: 15px;
-	font-weight: 500;
-	font-size: 45px;
-	color: rgba(var(--color3),0.5);
-	transition: color 0.5s;
-}
-
-.fa-twitter-square:hover {
-	color: rgba(var(--base-color1),1);
-}
-
-.fa-snapchat-square {
-	padding-top: 15px;
-	font-weight: 500;
-	font-size: 45px;
-	color: rgba(var(--color3),0.5);
-	transition: color 0.5s;
-}
-
-.fa-snapchat-square:hover {
-	color: rgba(var(--base-color1),1);
-}
-
-.fa-instagram-square {
-	padding-top: 15px;
-	font-weight: 500;
-	font-size: 45px;
-	color: rgba(var(--color3),0.5);
-	transition: color 0.5s;
-}
-
-.fa-instagram-square:hover {
-	color: rgba(var(--base-color1),1);
-}
-
-.fa-github-square {
-	padding-top: 15px;
-	font-weight: 500;
-	font-size: 45px;
-	color: rgba(var(--color3),0.5);
-	transition: color 0.5s, text-shadow 0.5s;
-}
-
-.fa-github-square:hover {
-	color: rgba(var(--base-color1),1);
-	text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+	bottom: 15px;
+	left: 0;
+	right: 0;
 }
 
 /*
@@ -309,12 +307,12 @@ body {
 }
 
 .buttonB_Base .buttonB_back:hover {
-	border: 1px solid rgba(var(--buttonB-color5),1);
+	border: 1px solid rgba(var(--lannister),1);
 }
 
 .buttonB_Base .buttonB_back .buttonB_text {
-	font-family: Quicksand;
-	font-size: 20px;
+	font-family: 'EnchantedLand';
+	font-size: 25px;
 	font-weight: 500;
 	text-align: center;
 	text-shadow: 1px;
@@ -343,7 +341,7 @@ body {
 }
 
 .buttonB_Base .buttonB_b:hover {
-	border: 1px solid rgba(var(--buttonB-color5),1);
+	border: 1px solid rgba(var(--lannister),1);
 }
 
 .fa-volume-mute {
@@ -426,7 +424,7 @@ body {
 }
 
 .slider:hover {
-	border: 1px solid rgba(var(--buttonB-color5),1);
+	border: 1px solid rgba(var(--lannister),1);
 }
 
 .slider::-webkit-slider-thumb {

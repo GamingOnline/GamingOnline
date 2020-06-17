@@ -15,11 +15,10 @@ if (isTouchDevice) {
 } else {
     console.debug("Desktop")
     var tag = document.createElement('script');
-    var videoID = "x2S3U50mAv8" //Lx1iH8DgrLE //7_ZFKbznRyY
-    var videoVolume = 5
-    var starttime = 0 // 72
-    var endtime = 6 //175
-    var loopcount = 1;
+    var videoID = "7_ZFKbznRyY"
+    var starttime = 0 // 101.7
+    var endtime = 50 //165
+    var loopcount = 1
 
     tag.src = "https://www.youtube.com/iframe_api";
     var firstScriptTag = document.getElementsByTagName('script')[0];
