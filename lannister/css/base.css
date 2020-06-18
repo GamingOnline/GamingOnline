@@ -129,9 +129,10 @@ body {
 	margin: auto;
 
 	width: auto;
-	height: 100px;
+	height: 500px;
 
-	top: 90px;
+	top: 50px;
+	bottom: 0;
 	left: 0;
 	right: 0;
 
@@ -177,7 +178,7 @@ body {
 	margin: auto;
 	left: 0;
 	right: 0;
-	color: rgba(var(--lannister),1);
+	color: rgba(var(--lannister2),1);
    display: block;
    margin-left: auto;
    margin-right: auto;
@@ -197,7 +198,7 @@ body {
 	margin: auto;
 	left: 0;
 	right: 0;
-	color: rgba(var(--lannister),1);
+	color: rgba(var(--lannister2),1);
    display: block;
    margin-left: auto;
    margin-right: auto;
@@ -206,25 +207,28 @@ body {
 	transition: top 0.5s, font-size 0.5s;
 }
 
-.top_page2 {
-	position: absolute;
+.bottom_page2 {
+	position: fixed;
 	margin: auto;
 
-	width: auto;
-	height: 100px;
+	width: 200px;
+	height: 70px;
 
-	top: 370px;
 	left: 0;
 	right: 0;
+	bottom: 0;
 
 	display: block;
 
-	/*border: 1px solid white;*/
+	background: rgba(var(--lannister),1);
+	border-top: 4px solid rgba(var(--lannister2),1);
+	border-left: 4px solid rgba(var(--lannister2),1);
+	border-right: 4px solid rgba(var(--lannister2),1);
 
-	filter: opacity(0);
+	/*filter: opacity(0);
 
 	animation: unfade 1550ms linear both;
-	animation-delay: 5s;
+	animation-delay: 5s;*/
 
 	display: flex;
 	flex-direction: row;
@@ -243,7 +247,7 @@ body {
 	bottom: 0;
 	margin: auto;
    font-weight: 50;
-   font-size: 50px;
+   font-size: 37px;
    color: rgba(var(--lannister),1);
    background: rgba(var(--lannister2), 1);
    border-left: 1px solid rgba(var(--lannister), 1);
@@ -252,7 +256,7 @@ body {
 }
 
 #ico:hover {
-   font-size: 54px;
+   font-size: 42px;
 }
 
 .roster {
@@ -264,9 +268,9 @@ body {
 	height: 700px;
 
 	background: rgba(var(--lannister),1);
-	border: 5px solid rgba(var(--lannister),1);
+	border: 5px solid rgba(var(--lannister2),1);
 
-	bottom: 15px;
+	bottom: 35px;
 	left: 0;
 	right: 0;
 }
