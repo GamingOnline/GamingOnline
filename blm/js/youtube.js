@@ -1,14 +1,14 @@
 var deviceAgent = navigator.userAgent.toLowerCase();
 
-var isTouchDevice = Modernizr.touch || 
-(deviceAgent.match(/(iphone|ipod|ipad)/) ||
-deviceAgent.match(/(android)/)  || 
-deviceAgent.match(/(iemobile)/) || 
-deviceAgent.match(/iphone/i) || 
-deviceAgent.match(/ipad/i) || 
-deviceAgent.match(/ipod/i) || 
-deviceAgent.match(/blackberry/i) || 
-deviceAgent.match(/bada/i));
+var isTouchDevice = Modernizr.touch ||
+    (deviceAgent.match(/(iphone|ipod|ipad)/) ||
+        deviceAgent.match(/(android)/) ||
+        deviceAgent.match(/(iemobile)/) ||
+        deviceAgent.match(/iphone/i) ||
+        deviceAgent.match(/ipad/i) ||
+        deviceAgent.match(/ipod/i) ||
+        deviceAgent.match(/blackberry/i) ||
+        deviceAgent.match(/bada/i));
 
 if (isTouchDevice) {
     console.debug("Mobile")
@@ -26,18 +26,22 @@ if (isTouchDevice) {
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
     var player;
-    function onYouTubeIframeAPIReady()
-    {
+
+    function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-        height: '100%',
-        width: '100%',
-        videoId: '' + videoID,
-        playerVars: {'showinfo': 0, 'playlist': videoID, 'controls': 0},
-        events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onStateChanged,
-            'onPlaybackQualityChange': onPlaybackQualityChanged
-        }
+            height: '100%',
+            width: '100%',
+            videoId: '' + videoID,
+            playerVars: {
+                'showinfo': 0,
+                'playlist': videoID,
+                'controls': 0
+            },
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onStateChanged,
+                'onPlaybackQualityChange': onPlaybackQualityChanged
+            }
         });
     }
 
@@ -54,7 +58,7 @@ if (isTouchDevice) {
     }
 
     function onEndLoop(event) {
-        setTimeout(function() {
+        setTimeout(function () {
             currentTime = event.target.getCurrentTime()
             //console.log(currentTime); 
             if (currentTime >= endtime) {
@@ -75,15 +79,15 @@ if (isTouchDevice) {
                 event.target.playVideo();
                 event.target.seekTo(starttime);
                 event.target.setPlaybackQuality("hd1080");
-            break;
+                break;
             case 1:
-            break;
+                break;
             case 2:
-            break;
+                break;
             case 3:
-            break;
+                break;
             case 5:
-            break;
+                break;
         }
     }
 
@@ -91,21 +95,21 @@ if (isTouchDevice) {
         switch (event.data) {
             case "small":
                 event.target.setPlaybackQuality("hd1080");
-            break;
+                break;
             case "medium":
                 event.target.setPlaybackQuality("hd1080");
-            break;
+                break;
             case "large":
                 event.target.setPlaybackQuality("hd1080");
-            break;
+                break;
             case "hd720":
                 event.target.setPlaybackQuality("hd1080");
-            break;
+                break;
             case "hd1080":
-            break;
+                break;
             case "highres":
                 event.target.setPlaybackQuality("hd1080");
-            break;
+                break;
         }
     }
 }

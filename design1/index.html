@@ -1,77 +1,80 @@
 <html>
-    <head>
-        <title></title>
 
-        <link rel="stylesheet" href="css/base.css" />
-        <link rel="stylesheet" href="css/youtube.css" />
+<head>
+    <title></title>
 
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/youtube.css" />
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" />
 
-        <script type="text/javascript" src="js/modernizr-custom.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        <script type="text/javascript" src="js/youtube.js"></script>
-        <script type="text/javascript" src="js/title.js"></script>
+    <script type="text/javascript" src="js/modernizr-custom.min.js"></script>
 
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    </head>
-    <body>
-        <div id="player"></div>
-        <div id="playerHover"></div>
+    <script type="text/javascript" src="js/youtube.js"></script>
+    <script type="text/javascript" src="js/title.js"></script>
 
-        <div class="box">
-            <div class="website">
-                <img href="#" src="https://i.imgur.com/GB5Ary4.png" />
-                <div class="webname">
-                    <a href="#" class="name">Gaming</a>
-                    <br />
-                    <br />
-                    <a href="#"><i class="fab fa-canadian-maple-leaf"></i></a>
-                </div>
-            </div>
-            <div id="canvas"></div>
-            <hr />
-            <div class="icons">
-                <a href="https://steamcommunity.com/id/GamingOnline/" target="_blank"><i class="fab fa-steam"></i></a>
-                <a>&nbsp;</a>
-                <a>&nbsp;</a>
-                <a href="https://discord.gg/zoo" target="_blank"><i class="fab fa-discord"></i></a>
-                <a>&nbsp;</a>
-                <a>&nbsp;</a>
-                <a href="https://gitlab.com/Saskatchewan" target="_blank"><i class="fab fa-gitlab"></i></a>
-                <a>&nbsp;</a>
-                <a>&nbsp;</a>
-                <a href="https://github.com/GamingOnline" target="_blank"><i class="fab fa-github"></i></a>
-                <a>&nbsp;</a>
-                <a>&nbsp;</a>
-                <a href="https://delrey.family/" target="_blank"><i class="fas fa-ghost"></i></a>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+</head>
+
+<body>
+    <div id="player"></div>
+    <div id="playerHover"></div>
+
+    <div class="box">
+        <div class="website">
+            <img href="#" src="https://i.imgur.com/GB5Ary4.png" />
+            <div class="webname">
+                <a href="#" class="name">Gaming</a>
+                <br />
+                <br />
+                <a href="#"><i class="fab fa-canadian-maple-leaf"></i></a>
             </div>
         </div>
-        <div id="buttonB_Base" class="buttonB_Base">
-            <div onclick="buttonB_Landing()" class="buttonB_back">
-              <a class="buttonB_text">Back</a>
-            </div>
-            &nbsp;
-            &nbsp;
-            <div id="slidecontainer" class="slidecontainer">
-              <input type="range" min="0" max="100" value="5" class="slider" id="volumeSlider">
-            </div>
-            &nbsp;
-            <div onclick="buttonB_muteVideo()" id="muteB" class="buttonB_b">
-              <i class="fas fa-volume-mute"></i>
-            </div>
-            &nbsp;
-            &nbsp;
-            <div onclick="buttonB_disableVideo()" id="disableV" class="buttonB_b">
-              <i class="fas fa-video-slash"></i>
-            </div>
-            &nbsp;
-            <div onclick="buttonB_enableVideo()" id="enableV" class="buttonB_b">
-              <i class="fas fa-video"></i>
-            </div>
+        <div id="canvas"></div>
+        <hr />
+        <div class="icons">
+            <a href="https://steamcommunity.com/id/GamingOnline/" target="_blank"><i class="fab fa-steam"></i></a>
+            <a>&nbsp;</a>
+            <a>&nbsp;</a>
+            <a href="https://discord.gg/zoo" target="_blank"><i class="fab fa-discord"></i></a>
+            <a>&nbsp;</a>
+            <a>&nbsp;</a>
+            <a href="https://gitlab.com/Saskatchewan" target="_blank"><i class="fab fa-gitlab"></i></a>
+            <a>&nbsp;</a>
+            <a>&nbsp;</a>
+            <a href="https://github.com/GamingOnline" target="_blank"><i class="fab fa-github"></i></a>
+            <a>&nbsp;</a>
+            <a>&nbsp;</a>
+            <a href="https://delrey.family/" target="_blank"><i class="fas fa-ghost"></i></a>
         </div>
-    </body>
-    <script type="text/javascript" src="js/function_library.js"></script>
-    <script type="text/javascript" src="js/media_buttons.js"></script>
+    </div>
+    <div id="buttonB_Base" class="buttonB_Base">
+        <div onclick="buttonB_Landing()" class="buttonB_back">
+            <a class="buttonB_text">Back</a>
+        </div>
+        &nbsp;
+        &nbsp;
+        <div id="slidecontainer" class="slidecontainer">
+            <input type="range" min="0" max="100" value="5" class="slider" id="volumeSlider">
+        </div>
+        &nbsp;
+        <div onclick="buttonB_muteVideo()" id="muteB" class="buttonB_b">
+            <i class="fas fa-volume-mute"></i>
+        </div>
+        &nbsp;
+        &nbsp;
+        <div onclick="buttonB_disableVideo()" id="disableV" class="buttonB_b">
+            <i class="fas fa-video-slash"></i>
+        </div>
+        &nbsp;
+        <div onclick="buttonB_enableVideo()" id="enableV" class="buttonB_b">
+            <i class="fas fa-video"></i>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/function_library.js"></script>
+<script type="text/javascript" src="js/media_buttons.js"></script>
+
 </html>

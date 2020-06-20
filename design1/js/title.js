@@ -1,26 +1,26 @@
 var deviceAgent = navigator.userAgent.toLowerCase();
 
-var isTouchDevice = Modernizr.touch || 
-(deviceAgent.match(/(iphone|ipod|ipad)/) ||
-deviceAgent.match(/(android)/)  || 
-deviceAgent.match(/(iemobile)/) || 
-deviceAgent.match(/iphone/i) || 
-deviceAgent.match(/ipad/i) || 
-deviceAgent.match(/ipod/i) || 
-deviceAgent.match(/blackberry/i) || 
-deviceAgent.match(/bada/i));
+var isTouchDevice = Modernizr.touch ||
+    (deviceAgent.match(/(iphone|ipod|ipad)/) ||
+        deviceAgent.match(/(android)/) ||
+        deviceAgent.match(/(iemobile)/) ||
+        deviceAgent.match(/iphone/i) ||
+        deviceAgent.match(/ipad/i) ||
+        deviceAgent.match(/ipod/i) ||
+        deviceAgent.match(/blackberry/i) ||
+        deviceAgent.match(/bada/i));
 
 if (isTouchDevice) {
     console.debug("Mobile")
 } else {
     console.debug("Desktop")
     if (document['addEventListener']) {
-        document['addEventListener']('DOMContentLoaded', function() {
+        document['addEventListener']('DOMContentLoaded', function () {
             loaded()
         })
     } else {
         if (document['attachEvent']) {
-            document['attachEvent']('onreadystatechange', function() {
+            document['attachEvent']('onreadystatechange', function () {
                 loaded()
             })
         }
