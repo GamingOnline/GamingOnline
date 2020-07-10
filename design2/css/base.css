@@ -53,6 +53,17 @@ body {
     --buttonB-color4: 203, 76, 58;
     --buttonB-color5: 96, 115, 182;
     --buttonB-color6: 119, 73, 75;
+    
+    --opacityGlobal: 0.8;
+    --opacityColorGlobal: 0.8;
+}
+
+.img_back {
+    position: fixed;
+    height: 1800px;
+    width: 2500px;
+    transform: scale(1,1);
+    filter: opacity(0.5);
 }
 
 /*
@@ -495,13 +506,10 @@ body {
     width: 70px;
 
     background: rgba(var(--buttonB-color1), 1);
-    border: 1px solid rgba(var(--buttonB-color2), 1);
+    border: 2.5px solid rgba(var(--bordercolor1), 1);
 
     transition: border-radius 0.5s, border 0.5s;
-}
-
-.buttonB_Base .buttonB_back:hover {
-    border: 1px solid rgba(var(--buttonB-color5), 1);
+    animation: rainbow var(--rainbow-sleep) linear infinite alternate;
 }
 
 .buttonB_Base .buttonB_back .buttonB_text {
@@ -529,13 +537,10 @@ body {
     width: 25px;
 
     background: rgba(var(--buttonB-color1), 1);
-    border: 1px solid rgba(var(--buttonB-color2), 1);
+    border: 2.5px solid rgba(var(--bordercolor1), 1);
 
     transition: border-radius 0.5s, border 0.5s;
-}
-
-.buttonB_Base .buttonB_b:hover {
-    border: 1px solid rgba(var(--buttonB-color5), 1);
+    animation: rainbow var(--rainbow-sleep) linear infinite alternate;
 }
 
 .fa-volume-mute {
@@ -613,12 +618,9 @@ body {
     -webkit-transition: .2s;
 
     background: rgba(var(--buttonB-color1), 1);
-    border: 1px solid rgba(var(--buttonB-color2), 1);
+    border: 2.5px solid rgba(var(--bordercolor1), 1);
     transition: border-radius 0.5s, border 0.5s;
-}
-
-.slider:hover {
-    border: 1px solid rgba(var(--buttonB-color5), 1);
+    animation: rainbow var(--rainbow-sleep) linear infinite alternate;
 }
 
 .slider::-webkit-slider-thumb {

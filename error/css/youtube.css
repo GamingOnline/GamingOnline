@@ -1,9 +1,6 @@
 #playerHover {
-    margin: 0px;
-    padding: 0px;
+    margin: auto;
     display: inline-block;
-    height: 100%;
-    width: 100%;
     position: absolute;
     left: 0;
     right: 0;
@@ -13,13 +10,12 @@
 
 #player {
     position: fixed;
+    margin: auto;
     z-index: -99999;
     -webkit-user-select: none;
     user-select: none;
-    width: 100%;
-    height: 100%;
-    transform: scale(2.6, 1.3);
+    transform: scale(1.8, 1.8);
     background: #555555;
-    opacity: 0.3;
-    filter: blur(8px);
+    opacity: 0.5;
+    filter: blur(4px);
 }

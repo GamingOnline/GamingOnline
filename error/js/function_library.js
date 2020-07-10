@@ -11,11 +11,14 @@ var isTouchDevice = Modernizr.touch ||
         deviceAgent.match(/bada/i));
 
 if (isTouchDevice) {
-    console.debug("Mobile")
-    this["slidecontainer"].remove();
-    this["muteB"].remove();
-    this["disableV"].remove();
-    this["enableV"].remove();
+    console.debug("Mobile");
+    (document.getElementById("muteB")).remove(); 
+    (document.getElementById("disableV")).remove(); 
+    (document.getElementById("enableV")).remove(); 
+    (document.getElementById("slidecontainer")).remove(); 
+    (document.getElementById("player")).remove(); 
+    (document.getElementById("footer")).remove();
 } else {
-    console.debug("Desktop")
+    console.debug("Desktop");
+    (document.getElementById("img_back")).remove();
 }

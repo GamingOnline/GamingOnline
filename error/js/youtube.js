@@ -15,10 +15,10 @@ if (isTouchDevice) {
 } else {
     console.debug("Desktop")
     var tag = document.createElement('script');
-    var videoID = "x2S3U50mAv8" //Lx1iH8DgrLE //7_ZFKbznRyY
+    var videoID = "u93yMeyEHAY" //Lx1iH8DgrLE //7_ZFKbznRyY
     var videoVolume = 5
     var starttime = 0 // 72
-    var endtime = 6 //175
+    var endtime = 999 //175
     var loopcount = 1;
 
     tag.src = "https://www.youtube.com/iframe_api";
@@ -49,6 +49,7 @@ if (isTouchDevice) {
         event.target.playVideo();
         event.target.seekTo(starttime);
         event.target.setPlaybackQuality("hd1080");
+        event.target.setPlaybackRate(1.25);
         onEndLoop(event);
         onStarted(event);
     }

@@ -50,6 +50,14 @@ body {
     --bordercolor7: 185, 2, 185;
 }
 
+.img_back {
+    position: fixed;
+    height: 100%;
+    width: 300%;
+    transform: scale(1.25,1.25);
+    filter: opacity(0.5);
+}
+
 /*
 	⏤⏤⏤ ᴀɴɪᴍᴀᴛɪᴏɴs ⏤⏤⏤
 */
@@ -298,7 +306,7 @@ body {
     filter: opacity(0.5);
 }
 
-.buttonB_Base .buttonB_back {
+.buttonB_back {
     height: 25px;
     width: 70px;
 
@@ -308,7 +316,7 @@ body {
     transition: border-radius 0.5s, border 0.5s;
 }
 
-.buttonB_Base .buttonB_back:hover {
+.buttonB_back:hover {
     border: 1px solid rgba(var(--buttonB-color5), 1);
 }
 

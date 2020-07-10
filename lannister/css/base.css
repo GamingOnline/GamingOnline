@@ -61,6 +61,14 @@ body {
     /* MS */
 }
 
+.img_back {
+    position: fixed;
+    height: 800px;
+    width: 800px;
+    transform: scale(1.5,1.5);
+    filter: opacity(0.5) grayscale(100);
+}
+
 /*
 	⏤⏤⏤ ᴀɴɪᴍᴀᴛɪᴏɴs ⏤⏤⏤
 */

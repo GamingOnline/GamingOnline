@@ -45,15 +45,11 @@ if (isTouchDevice) {
     }
 
     function onPlayerReady(event) {
+        player.setVolume(volumeSlider.value)
         event.target.playVideo();
         event.target.seekTo(starttime);
         event.target.setPlaybackQuality("hd1080");
         onEndLoop(event);
-        onStarted(event);
-    }
-
-    function onStarted(event) {
-        event.target.setVolume(volumeSlider.value);
     }
 
     function onEndLoop(event) {
