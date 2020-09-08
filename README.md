@@ -1,5 +1,5 @@
 #### **Personal website design.**
-###### [Live](https://gamingonline.github.io/) 
+###### [Live Site](https://gamingonline.github.io/) 
 
 #### Resources used
 ###### [Bootstrap (CSS/JS Library)](https://getbootstrap.com/)
