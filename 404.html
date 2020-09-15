@@ -15,19 +15,26 @@
     <script src="https://kit.fontawesome.com/c74f645bc1.js" crossorigin="anonymous"></script>
 </head>
 
-<body style="background: var(--gray);">
-    <navibar class="nav justify-content-center animate__animated animate__fadeInDownBig" style="background: var(--dark);">
+<body style="background: var(--gray-dark);">
+    <info>
+        <div class="alert alert-danger ml-3 mr-3 my-3 animate__animated animate__fadeInDownBig" role="alert">
+            <h4 class="alert-heading"><i style="vertical-align: top !important; font-weight: 1000; font-size: 2rem;" class="fas fa-exclamation-triangle"></i> Error</h4>
+            <p style="font-size: 1.05 rem !important;">Error 404 Not Found</p>
+        </div>
+    </info>
+    
+    <hr class="animate__animated animate__backInLeft" style="border-color: var(--gray);">
+    
+    <navibar class="nav justify-content-center animate__animated animate__backInRight" style="background: var(--dark);">
         <li class="nav-item">
-            <a class="nav-link" style="color: white;" href="index.html"><span style="font-size: 20px; vertical-align: middle !important;" class="material-icons">local_cafe</span> Home</a>
+            <a class="nav-link font-weight-bold " style="color: white;" href="../index.html"><i style="font-weight: 1500;" class="fas fa-mug-hot"></i> Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" style="color: white;" href="/releases/"><span style="font-size: 20px; vertical-align: middle !important;" class="material-icons">folder_special</span> Releases</a>
+            <a class="nav-link font-weight-bold" style="color: white;" href="/releases/index.html"><i style="font-weight: 1500;" class="fas fa-code"></i> Releases</a>
         </li>
     </navibar>
-
-    <info>
-        <li class="list-group-item list-group-item-danger h6 rounded-0 animate__animated animate__fadeInDownBig"><span style="font-size: 31px; vertical-align: middle !important;" class="material-icons">warning</span>Error 404 Not Found</li>
-    </info>
+    
+    <hr class="animate__animated animate__backInRight" style="border-color: var(--gray);">
 
     <custom>
         <div class="embed-responsive embed-responsive-16by9 slide animate__animated animate__slideInUp">
