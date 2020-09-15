@@ -3,5 +3,5 @@
 
 #### Resources used
 ###### [Bootstrap (CSS/JS Library)](https://getbootstrap.com/)
-###### [Material.IO (Icon Library)](https://material.io/)
+###### [FontAwesome (Icon Library)](https://fontawesome.com/)
 ###### [Animate.Style (CSS Animation Library)](https://animate.style/)
