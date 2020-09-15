@@ -10,73 +10,83 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" />
-    <script src="https://kit.fontawesome.com/c74f645bc1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body style="background: var(--gray-dark);">
     <info>
-        <!--<li class="list-group-item list-group-item-primary h6 rounded-0 animate__animated animate__fadeInDownBig"><span style="font-size: 31px; vertical-align: middle !important;" class="material-icons">info</span> Welcome!</li>-->
+        <!--<div class="alert alert-warning ml-3 mr-3 my-3 animate__animated animate__fadeInDownBig" role="alert">
+            <h4 class="alert-heading"><i style="vertical-align: top !important; font-weight: 1000; font-size: 2rem;" class="fas fa-info-circle"></i> Information</h4>
+            <p style="font-size: 1.05 rem !important;">If you want your own section on this page contact me on discord. (Gaming#0394)</p>
+        </div>-->
     </info>
 
-    <navibar class="nav justify-content-center animate__animated animate__fadeInDownBig" style="background: var(--dark);">
+    <hr class="animate__animated animate__backInLeft" style="border-color: var(--gray);">
+
+    <navibar class="nav justify-content-center animate__animated animate__backInRight" style="background: var(--dark);">
         <li class="nav-item">
-            <a class="nav-link font-weight-bold" style="color: white;" href="#"><span style="font-size: 20px; vertical-align: middle !important;" class="material-icons">local_cafe</span> Home</a>
+            <a class="nav-link font-weight-bold " style="color: white;" href="#"><i style="font-size: 15px; font-weight: 1500;" class="fas fa-mug-hot"></i> Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link font-weight-bold" style="color: white;" href="/releases/"><span style="font-size: 20px; vertical-align: middle !important;" class="material-icons">folder_special</span> Releases</a>
+            <a class="nav-link font-weight-bold" style="color: white;" href="/releases/"><i style="font-size: 15px; font-weight: 1500;" class="fas fa-code"></i> Releases</a>
         </li>
     </navibar>
 
+    <hr class="animate__animated animate__backInRight" style="border-color: var(--gray); border-bottom-style: dotted;">
+
     <custom>
-        <div class="jumbotron animate__animated animate__fadeInUpBig" style="background: var(--gray-dark); color: white; border-color: var(--gray);">
+        <div class="jumbotron animate__animated animate__fadeInRightBig text-center" style="background: var(--gray-dark); color: white; border-color: var(--gray);">
             <h1 class="display-4">Welcome!</h1>
-            <h5>Here you can find information about myself, my public development releases and developement releases from friends of mine.</h5>
-            <h5>There are a few examples with text showing what experience I have below.</h5>
+            <initialism>Here you can find information about myself, my public development releases and developement releases from friends of mine.</initialism>
+            <br />
+            <initialism>There are a few examples with text showing what experience I have below.</initialism>
         </div>
 
-        <div class="media p-5 animate__animated animate__fadeInUpBig" style="background: var(--gray-dark); color: white; border-color: var(--gray);">
-            <div class="media-body">
-                <h1 class="mt-5 text-right" style="transform: rotate(-3deg);">Asset Rigging</h1>
+        <div class="media text-center align-items-center justify-content-center" style="background: var(--gray-dark); color: white; border-color: var(--gray);">
+            <div class="">
+                <div class="p-5 animate__animated animate__backInLeft">
+                    <div class="media-body p-2">
+                        <legend>Asset Rigging</legend>
+                    </div>
+                    <img src="content/E5HROqHIbn.gif" style="max-height: 45rem !important; max-width: 45rem !important;" class="rounded-circle h-50 w-50" alt="...">
+                </div>
+                <div class="p-5 animate__animated animate__backInRight">
+                    <div class="media-body p-2">
+                        <legend>Light Modeling</legend>
+                    </div>
+                    <img src="content/S0Vdgk5Xs6.gif" style="max-height: 45rem !important; max-width: 45rem !important;" class="rounded-circle h-50 w-50" alt="...">
+                </div>
+                <div class="p-5 animate__animated animate__backInRight">
+                    <div class="media-body p-2">
+                        <legend>SQF, HTML, CSS</legend>
+                    </div>
+                    <img src="content/HxjpuRqP1Z.png" style="max-height: 45rem !important; max-width: 45rem !important;" class="rounded-circle h-50 w-50" alt="...">
+                </div>
             </div>
-            <img src="https://steamuserimages-a.akamaihd.net/ugc/1477697792517777070/991E7D31538AC3FAB546BA84D9A3D75856AE3D45/" style="transform: rotate(-3deg);" class="ml-3 h-50 w-50" alt="...">
-        </div>
-
-        <div class="media p-5 animate__animated animate__fadeInUpBig" style="background: var(--gray-dark); color: white; border-color: var(--gray);">
-            <img src="https://steamuserimages-a.akamaihd.net/ugc/772866553395250947/4997AB9FD042EF5357E4FDB23EA409CD2EE891FB/" style="transform: rotate(3deg);" class="align-self-end mr-3 h-50 w-50" alt="...">
-            <div class="media-body">
-                <h1 class="mt-5 text-left" style="transform: rotate(3deg);">Light Modeling</h1>
-            </div>
-        </div>
-
-        <div class="media p-5 animate__animated animate__fadeInUpBig" style="background: var(--gray-dark); color: white; border-color: var(--gray);">
-            <div class="media-body">
-                <h1 class="mt-5 text-right" style="transform: rotate(-3deg);">SQF, HTML, CSS</h1>
-            </div>
-            <img src="content/HxjpuRqP1Z.png" style="transform: rotate(-3deg);" class="ml-3  h-25 w-25" alt="...">
         </div>
     </custom>
 
-    <projects class="animate__animated animate__fadeInUpBig" style="background: var(--dark);">
-        <div class="container">
-
+    <projects>
+        <div class="align-items-center justify-content-center animate__animated animate__fadeInUpBig" style="background: rgba(255,255,255,0.04); color: white;">
+            <div class="ml-5 mr-5 my-5 p-3">
+                <div class="container p-3">
+                    <legend class="text-center font-weight-bold" style="font-size: 1.5rem !important;">Development Contributions</legend>
+                    <div class="container media p-1 align-items-center justify-content-center">
+                        <img src="content/OASIS.png" style="height: 5rem !important; width: 5rem !important; filter: grayscale(100%);" class="p-1" alt="...">
+                        <img src="content/EE.png" style="height: 5rem !important; width: 5rem !important; filter: grayscale(100%);" class="p-1" alt="...">
+                        <img src="content/SL.png" style="height: 5rem !important; width: 5rem !important; filter: grayscale(100%);" class="p-1" alt="...">
+                        <img src="content/Nodus.png" style="height: 5rem !important; width: 5rem !important; filter: grayscale(100%);" class="p-1" alt="...">
+                        <img src="content/Spero.png" style="height: 5rem !important; width: 5rem !important; filter: grayscale(100%);" class="p-1" alt="...">
+                    </div>
+                    <div class="container media p-1 align-items-center justify-content-center">
+                        <img src="content/ER.png" style="height: 5rem !important; width: 5rem !important; filter: grayscale(100%);" class="p-1" alt="...">
+                    </div>
+                </div>
+            </div>
         </div>
     </projects>
-
-    <footer class="animate__animated animate__fadeInUpBig my-0" style="background: var(--dark);">
-        <div class="container">
-            <div class="row justify-content-center">
-                <a class="h4 " style="color: white;">Contact Information</a>
-            </div>
-            <div class="row justify-content-center">
-                <a class="nav-link" style="color: white;" href="https://steamcommunity.com/id/GamingOnline/" target="_blank"><span style="font-size: 32px; vertical-align: middle !important;" class="material-icons">sports_esports</span></a>
-                <a class="nav-link" style="color: white;" href="https://discord.gg/KdTCyFv" target="_blank"><span style="font-size: 32px; vertical-align: middle !important;" class="material-icons">headset_mic</span></a>
-                <a class="nav-link" style="color: white;" href="https://github.com/GamingOnline" target="_blank"><span style="font-size: 32px; vertical-align: middle !important;" class="material-icons">code</span></a>
-                <a class="nav-link " style="color: white;" href="https://gitlab.com/Saskatchewan" target="_blank"><span style="font-size: 32px; vertical-align: middle !important;" class="material-icons">construction</span></a>
-            </div>
-        </div>
-    </footer>
 
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
