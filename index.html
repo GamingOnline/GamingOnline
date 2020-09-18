@@ -10,66 +10,86 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
-<body style="background: var(--gray-dark);">
+<body style="background: var(--primary);">
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <navibar class="nav nav-pills nav-justified justify-content-center animate__animated animate__fadeInDown p-3" style="background: rgba(255,255,255,0.02);">
+                <li class="nav-item" style="background: rgba(255,255,255,0.02);">
+                    <a class="nav-link font-weight-bold" style="font-size: 0.9rem !important; color: var(--secondary);" href="#"><i style="font-size: 0.9rem !important; font-weight: 1500;" class="fas fa-mug-hot"></i> Home</a>
+                </li>
+                <li class="nav-item" style="background: rgba(255,255,255,0.02);">
+                    <a class="nav-link font-weight-bold" style="font-size: 0.9rem !important; color: var(--secondary);" href="/releases/"><i style="font-size: 0.9rem !important; font-weight: 1500;" class="fas fa-code"></i> Releases</a>
+                </li>
+                <li class="nav-item" style="background: rgba(255,255,255,0.02);">
+                    <a class="nav-link font-weight-bold" style="font-size: 0.9rem !important; color: var(--secondary);" href="#soonTM"><i style="font-size: 0.9rem !important; font-weight: 1500;" class="fas fa-folder-open"></i> Projects</a>
+                </li>
+            </navibar>
+        </div>
+        <nav class="navbar navbar-dark slide animate__animated animate__fadeInDownBig" style="background: rgba(255,255,255,0.02);">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+
     <info>
-        <!--<div class="alert alert-warning ml-3 mr-3 my-3 animate__animated animate__fadeInDownBig" role="alert">
-            <h4 class="alert-heading"><i style="vertical-align: top !important; font-weight: 1000; font-size: 2rem;" class="fas fa-info-circle"></i> Information</h4>
+        <!--<div class="alert alert-warning text-center rounded-0 animate__animated animate__fadeInDownBig my-3" role="alert" style="background: rgba(255,255,255,0.02); border-color: rgba(0,0,0,0); color: var(--secondary);">
+            <h4 class="alert-heading"><i style="vertical-align: top !important; font-weight: 1000; font-size: 1.4rem;" class="fas fa-info-circle"></i> Information</h4>
             <p style="font-size: 1.05 rem !important;">If you want your own section on this page contact me on discord. (Gaming#0394)</p>
         </div>-->
     </info>
 
-    <div class="my-3"><hr class="animate__animated animate__backInLeft" style="border-color: var(--gray);"></div>
-    <navibar class="nav justify-content-center animate__animated animate__backInRight" style="background: var(--dark);">
-        <li class="nav-item">
-            <a class="nav-link font-weight-bold " style="color: white;" href="#"><i style="font-size: 15px; font-weight: 1500;" class="fas fa-mug-hot"></i> Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link font-weight-bold" style="color: white;" href="/releases/"><i style="font-size: 15px; font-weight: 1500;" class="fas fa-code"></i> Releases</a>
-        </li>
-    </navibar>
-    <div class="my-3"><hr class="animate__animated animate__backInRight" style="border-color: var(--gray);"></div>
-
     <custom>
-        <div class="jumbotron animate__animated animate__fadeInRightBig text-center" style="background: var(--gray-dark); color: white; border-color: var(--gray);">
-            <h1 class="display-4">Welcome!</h1>
-            <p style="font-size: 1.05rem !important;">Here you can find information about myself, my public development releases and developement releases from friends of mine.</p>
+        <div class="jumbotron animate__animated animate__fadeInDownBig text-center" style="background: rgba(255,255,255,0.02);">
+            <h1 class="display-4" style="color: var(--secondary);">Welcome!</h1>
+            <p style="font-size: 1.05rem !important; color: var(--secondary);">Here you can find information about myself, my public development releases and developement releases from friends of mine.</p>
         </div>
-        
-        <div class="my-5"><hr class="animate__animated animate__backInRight" style="border-color: var(--gray);"></div>
 
-        <div class="text-center align-items-center justify-content-center" style="background: var(--gray-dark); color: white; border-color: var(--gray);">
-            <div class="my-5 ml-5 mr-5 animate__animated animate__backInLeft">
-                <p style="font-size: 1.25rem !important;">Asset Rigging</p>
-                <img src="content/E5HROqHIbn.gif" style="height: 17rem !important; width: 17rem !important;" class="rounded-circle h-50 w-50" alt="...">
-            </div>
-            <div class="my-5 ml-5 mr-5 animate__animated animate__backInRight">
-                <p style="font-size: 1.25rem !important;">Light Modeling</p>
-                <img src="content/S0Vdgk5Xs6.gif" style="height: 17rem !important; width: 17rem !important;" class="rounded-circle h-50 w-50" alt="...">
-            </div>
-            <div class="my-5 ml-5 mr-5 animate__animated animate__backInLeft">
-                <p style="font-size: 1.25rem !important;">SQF, HTML, CSS</p>
-                <img src="content/HxjpuRqP1Z.png" style="height: 17rem !important; width: 17rem !important;" class="rounded-circle h-50 w-50" alt="...">
+        <div class="container">
+            <legend class="text-center animate__animated animate__fadeInDownBig" style="font-size: 1.7rem !important; color: var(--secondary);">I have experience in...</legend>
+
+            <div class="text-center align-items-center justify-content-center">
+                <div class="my-5 ml-5 mr-5 animate__animated animate__fadeInUpBig">
+                    <p style="font-size: 1.25rem !important; color: var(--secondary);">Game Assets (Rigging/Light Modeling)</p>
+                    <img src="content/E5HROqHIbn.gif" style="height: 17rem !important; width: 17rem !important;" class="rounded-circle h-50 w-50" alt="...">
+                </div>
+                <div class="my-5 ml-5 mr-5 animate__animated animate__fadeInUpBig">
+                    <p style="font-size: 1.25rem !important; color: var(--secondary);">GUI/UI (Design)</p>
+                    <img src="content/IlUj7Y4386.png" style="height: 17rem !important; width: 17rem !important;" class="rounded-circle h-50 w-50" alt="...">
+                </div>
+                <div class="my-5 ml-5 mr-5 animate__animated animate__fadeInUpBig">
+                    <p style="font-size: 1.25rem !important; color: var(--secondary);">SQF (Scripting)</p>
+                    <img src="content/HxjpuRqP1Z.png" style="height: 17rem !important; width: 17rem !important;" class="rounded-circle h-50 w-50" alt="...">
+                </div>
             </div>
         </div>
     </custom>
 
     <projects>
-        <div class="animate__animated animate__fadeInUpBig" style="background: rgba(255,255,255,0.02); color: white;">
-            <legend class="text-center font-weight-bold" style="font-size: 1.25rem !important;">Development Contributions</legend>
-            <div class="text-center align-items-center justify-content-center">
-                <img src="content/OASIS.png" style="height: 2.7rem !important; width: 2.7rem !important; filter: grayscale(100%);" class="ml-1 mr-1" alt="...">
-                <img src="content/EE.png" style="height: 2.7rem !important; width: 2.7rem !important; filter: grayscale(100%);" class="ml-1 mr-1" alt="...">
-                <img src="content/SL.png" style="height: 2.7rem !important; width: 2.7rem !important; filter: grayscale(100%);" class="ml-1 mr-1" alt="...">
-                <img src="content/Nodus.png" style="height: 2.7rem !important; width: 2.7rem !important; filter: grayscale(100%);" class="ml-1 mr-1" alt="...">
-                <img src="content/Spero.png" style="height: 2.7rem !important; width: 2.7rem !important; filter: grayscale(100%);" class="ml-1 mr-1" alt="...">
-            </div>
-            <div class="text-center align-items-center justify-content-center">
-                <img src="content/ER.png" style="height: 4rem !important; width: 4rem !important; filter: grayscale(100%);" class="ml-1 mr-1 my-1" alt="...">
+        <div class="animate__animated animate__fadeInUpBig text-center align-items-center justify-content-center" style="background: rgba(255,255,255,0.02);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <legend class="text-center text-capitalize" style="font-size: 1.3rem !important; color: var(--secondary);">Development Contribution</legend>
+                        <div class="text-center align-items-center justify-content-center">
+                            <img src="content/OASIS.png" style="height: 2.7rem !important; width: 2.7rem !important;" class="ml-1 mr-1" alt="...">
+                            <img src="content/EE.png" style="height: 2.7rem !important; width: 2.7rem !important;" class="ml-1 mr-1" alt="...">
+                            <img src="content/SL.png" style="height: 2.7rem !important; width: 2.7rem !important;" class="ml-1 mr-1" alt="...">
+                            <img src="content/Nodus.png" style="height: 2.7rem !important; width: 2.7rem !important;" class="ml-1 mr-1" alt="...">
+                            <img src="content/Spero.png" style="height: 2.7rem !important; width: 2.7rem !important;" class="ml-1 mr-1" alt="...">
+                        </div>
+                        <div class="text-center align-items-center justify-content-center">
+                            <img src="content/ER.png" style="height: 4rem !important; width: 4rem !important;" class="ml-1 mr-1 my-1" alt="...">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </projects>

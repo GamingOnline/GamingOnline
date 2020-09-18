@@ -9,36 +9,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" />
     <script src="https://kit.fontawesome.com/c74f645bc1.js" crossorigin="anonymous"></script>
 </head>
 
-<body style="background: var(--gray-dark);">
+<body style="background: var(--primary);">
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <navibar class="nav nav-pills nav-justified justify-content-center animate__animated animate__fadeInDown p-3" style="background: rgba(255,255,255,0.02);">
+                <li class="nav-item" style="background: rgba(255,255,255,0.02);">
+                    <a class="nav-link font-weight-bold" style="font-size: 0.9rem !important; color: var(--secondary);" href="../index.html"><i style="font-size: 0.9rem !important; font-weight: 1500;" class="fas fa-mug-hot"></i> Home</a>
+                </li>
+                <li class="nav-item" style="background: rgba(255,255,255,0.02);">
+                    <a class="nav-link font-weight-bold" style="font-size: 0.9rem !important; color: var(--secondary);" href="/releases/index.html"><i style="font-size: 0.9rem !important; font-weight: 1500;" class="fas fa-code"></i> Releases</a>
+                </li>
+                <li class="nav-item" style="background: rgba(255,255,255,0.02);">
+                    <a class="nav-link font-weight-bold" style="font-size: 0.9rem !important; color: var(--secondary);" href="#soonTM"><i style="font-size: 0.9rem !important; font-weight: 1500;" class="fas fa-folder-open"></i> Projects</a>
+                </li>
+            </navibar>
+        </div>
+        <nav class="navbar navbar-dark slide animate__animated animate__fadeInDownBig" style="background: rgba(255,255,255,0.02);">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+
     <info>
-        <div class="alert alert-danger ml-3 mr-3 my-3 animate__animated animate__fadeInDownBig" role="alert">
-            <h4 class="alert-heading"><i style="vertical-align: top !important; font-weight: 1000; font-size: 2rem;" class="fas fa-exclamation-triangle"></i> Error</h4>
+        <div class="alert alert-warning text-center rounded-0 animate__animated animate__fadeInDownBig my-3" role="alert" style="background: rgba(255,255,255,0.02); border-color: rgba(0,0,0,0); color: var(--secondary);">
+            <h4 class="alert-heading"><i style="vertical-align: top !important; font-weight: 1000; font-size: 1.4rem;" class="fas fa-exclamation-triangle"></i> Error</h4>
             <p style="font-size: 1.05 rem !important;">Error 404 Not Found</p>
+            <a href="../index.html" class="btn btn-primary" style="background: rgba(255,255,255,0.02);">Take Me Back To The Landing Page</a>
         </div>
     </info>
-    
-    <div class="my-3"><hr class="animate__animated animate__backInLeft" style="border-color: var(--gray);"></div>
-    
-    <navibar class="nav justify-content-center animate__animated animate__backInRight" style="background: var(--dark);">
-        <li class="nav-item">
-            <a class="nav-link font-weight-bold " style="color: white;" href="../index.html"><i style="font-weight: 1500;" class="fas fa-mug-hot"></i> Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link font-weight-bold" style="color: white;" href="/releases/index.html"><i style="font-weight: 1500;" class="fas fa-code"></i> Releases</a>
-        </li>
-    </navibar>
-    
-    <div class="my-3"><hr class="animate__animated animate__backInRight" style="border-color: var(--gray);"></div>
 
     <custom>
-        <div class="embed-responsive embed-responsive-16by9 slide animate__animated animate__slideInUp">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/o48KzPa42_o?loop=1" allowfullscreen></iframe>
+        <div class="media embed-responsive embed-responsive-16by9 slide animate__animated animate__slideInUp">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/o48KzPa42_o?loop=1" style="filter: grayscale(100%);" allowfullscreen></iframe>
         </div>
     </custom>
 

@@ -9,327 +9,424 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0/mdb.min.js"></script>
 </head>
 
-<body style="background: var(--gray-dark);">
+<body style="background: var(--primary);">
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <navibar class="nav nav-pills nav-justified justify-content-center animate__animated animate__fadeInDown p-3" style="background: rgba(255,255,255,0.02);">
+                <li class="nav-item" style="background: rgba(255,255,255,0.02);">
+                    <a class="nav-link font-weight-bold" style="font-size: 0.9rem !important; color: var(--secondary);" href="../index.html"><i style="font-size: 0.9rem !important; font-weight: 1500;" class="fas fa-mug-hot"></i> Home</a>
+                </li>
+                <li class="nav-item" style="background: rgba(255,255,255,0.02);">
+                    <a class="nav-link font-weight-bold" style="font-size: 0.9rem !important; color: var(--secondary);" href="/releases/index.html"><i style="font-size: 0.9rem !important; font-weight: 1500;" class="fas fa-code"></i> Releases</a>
+                </li>
+                <li class="nav-item" style="background: rgba(255,255,255,0.02);">
+                    <a class="nav-link font-weight-bold" style="font-size: 0.9rem !important; color: var(--secondary);" href="#soonTM"><i style="font-size: 0.9rem !important; font-weight: 1500;" class="fas fa-folder-open"></i> Projects</a>
+                </li>
+            </navibar>
+            <subnavi class="nav nav-pills nav-justified justify-content-center animate__animated animate__fadeInDown p-3" style="background: rgba(255,255,255,0.02);">
+                <li class="nav-item" style="background: rgba(255,255,255,0.02);">
+                    <a class="nav-link font-weight-bold" style="font-size: 0.9rem !important; color: var(--secondary);" href="#gaming"><i style="font-weight: 1500;" class="fab fa-canadian-maple-leaf"></i> Gaming</a>
+                </li>
+                <li class="nav-item" style="background: rgba(255,255,255,0.02);">
+                    <a class="nav-link font-weight-bold" style="font-size: 0.9rem !important; color: var(--secondary);" href="#arkfall"><i style="font-weight: 1500;" class="fas fa-motorcycle"></i> Arkfall</a>
+                </li>
+                <li class="nav-item" style="background: rgba(255,255,255,0.02);">
+                    <a class="nav-link font-weight-bold" style="font-size: 0.9rem !important; color: var(--secondary);" href="#means240"><i style="font-weight: 1500;" class="fas fa-cat"></i> Means240</a>
+                </li>
+                <li class="nav-item" style="background: rgba(255,255,255,0.02);">
+                    <a class="nav-link font-weight-bold" style="font-size: 0.9rem !important; color: var(--secondary);" href="#Kangaro0"><i style="font-weight: 1500;" class="fas fa-caravan"></i> Kangaro0</a>
+                </li>
+                <li class="nav-item" style="background: rgba(255,255,255,0.02);">
+                    <a class="nav-link font-weight-bold" style="font-size: 0.9rem !important; color: var(--secondary);" href="#JohnDoe"><i style="font-weight: 1500;" class="fas fa-blind"></i> John Doe</a>
+                </li>
+            </subnavi>
+        </div>
+        <nav class="navbar navbar-dark slide animate__animated animate__fadeInDownBig" style="background: rgba(255,255,255,0.02);">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+
     <info>
-        <div class="alert alert-warning ml-3 mr-3 my-3 animate__animated animate__fadeInDownBig" role="alert">
-            <h4 class="alert-heading"><i style="vertical-align: top !important; font-weight: 1000; font-size: 2rem;" class="fas fa-info-circle"></i> Information</h4>
+        <div class="alert alert-warning text-center rounded-0 animate__animated animate__fadeInDownBig my-3" role="alert" style="background: rgba(255,255,255,0.02); border-color: rgba(0,0,0,0); color: var(--secondary);">
+            <h4 class="alert-heading"><i style="vertical-align: top !important; font-weight: 1000; font-size: 1.4rem;" class="fas fa-info-circle"></i> Information</h4>
             <p style="font-size: 1.05 rem !important;">If you want your own section on this page contact me on discord. (Gaming#0394)</p>
         </div>
     </info>
-    
-    <div class="my-3"><hr class="animate__animated animate__backInLeft" style="border-color: var(--gray);"></div>
-
-    <navibar class="nav justify-content-center animate__animated animate__backInRight" style="background: var(--dark);">
-        <li class="nav-item">
-            <a class="nav-link font-weight-bold " style="color: white;" href="../index.html"><i style="font-weight: 1500;" class="fas fa-mug-hot"></i> Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link font-weight-bold" style="color: white;" href="/releases/index.html"><i style="font-weight: 1500;" class="fas fa-code"></i> Releases</a>
-        </li>
-    </navibar>
-
-    <subnavi class="nav justify-content-center animate__animated animate__backInLeft" style="background: var(--dark);">
-        <li class="nav-item">
-            <a class="nav-link font-weight-bold" style="color: white;" href="#gaming"><i style="font-weight: 1500;" class="fab fa-canadian-maple-leaf"></i> Gaming</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link font-weight-bold" style="color: white;" href="#arkfall"><i style="font-weight: 1500;" class="fas fa-motorcycle"></i> Arkfall</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link font-weight-bold" style="color: white;" href="#means240"><i style="font-weight: 1500;" class="fas fa-cat"></i> Means240</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link font-weight-bold" style="color: white;" href="#Kangaro0"><i style="font-weight: 1500;" class="fas fa-caravan"></i> Kangaro0</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link font-weight-bold" style="color: white;" href="#JohnDoe"><i style="font-weight: 1500;" class="fas fa-blind"></i> John Doe</a>
-        </li>
-    </subnavi>
-    
-    <div class="my-3"><hr class="animate__animated animate__backInRight" style="border-color: var(--gray);"></div>
 
     <eden>
-        <div class="my-1 justify-content-center slide animate__animated animate__fadeInUpBig" style="background: var(--dark);">
+        <div class="my-3 justify-content-center slide animate__animated animate__fadeInUpBig" style="background: rgba(255,255,255,0.02); border-color: rgba(0,0,0,0); color: var(--secondary);">
             <div class="container text-center">
                 <div id="gaming"></div>
-                <div class="row justify-content-center"><a class="nav-link" style="color: white;"></a></div>
+                <div class="row justify-content-center"><a class="nav-link"></a></div>
                 <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/ba/baf8060aee2b4df6355030e6ca2b5c82f5e93813_full.jpg" style="max-height: 5rem !important; max-width: 5rem !important; border-radius: 50%;">
-                <h5 style="color: white;">Gaming</h5>
-                <div class="row justify-content-center">
-                    <a class="nav-link" style="color: white;" href="https://steamcommunity.com/id/GamingOnline/" target="_blank"><i style="font-weight: 1500; font-size: 1.8rem;" class="fab fa-steam-square"></i></a>
-                    <a class="nav-link" style="color: white;" href="https://github.com/GamingOnline" target="_blank"><i style="font-weight: 1500; font-size: 1.8rem;" class="fab fa-github-square"></i></a>
-                    <a class="nav-link " style="color: white;" href="https://gitlab.com/Saskatchewan" target="_blank"><i style="font-weight: 1500; font-size: 1.8rem;" class="fab fa-git-square"></i></a>
+                <h5 class="m-2" style="color: var(--secondary);">Gaming</h5>
+                <div class="row justify-content-center my-2">
+                    <a class="nav-link" href="https://steamcommunity.com/id/GamingOnline/" target="_blank"><i style="font-weight: 1500; font-size: 1.8rem; color: var(--secondary);" class="fab fa-steam-square"></i></a>
+                    <a class="nav-link" href="https://github.com/GamingOnline" target="_blank"><i style="font-weight: 1500; font-size: 1.8rem; color: var(--secondary);" class="fab fa-github-square"></i></a>
+                    <a class="nav-link" href="https://gitlab.com/Saskatchewan" target="_blank"><i style="font-weight: 1500; font-size: 1.8rem; color: var(--secondary);" class="fab fa-git-square"></i></a>
                 </div>
             </div>
 
-            <div class="tab-pane fade show in active ml-3 mr-3" id="panel31" role="tabpanel">
-                <div class="row">
-                    <div class="col-md-12 col-lg-4">
-                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal" style="background: var(--gray); color: white;">
+            <div class="row row-cols-1 row-cols-md-3 ml-3 mr-3">
+                <div class="col mb-4">
+                    <div class="card h-100" style="background: var(--primary); border-color: var(--dark); color: var(--secondary);">
+                        <div class="view overlay">
                             <div class="embed-responsive embed-responsive-16by9 card-img-top">
                                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TxwyMFz4vL4"></iframe>
                             </div>
-                            <div class="card-body">
-                                <h5 class="my-1">ELS System</h5>
-                                <p class="card-text mb-3">This is a small UI I worked on at New Eden RP, it is supposed to be a similar system used in GTA. It was work in progress and the UI design was not final.</p>
-                            </div>
-                        </a>
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="my-1" style="color: var(--secondary);">ELS System</h5>
+                            <p class="card-text mb-3" style="text-decoration: none;">This is a small UI I worked on at New Eden RP, it is supposed to be a similar system used in GTA. It was work in progress and the UI design was not final.</p>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal" style="background: var(--gray); color: white;">
-                            <div class="embed-responsive embed-responsive-16by9 card-img-top h-50">
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="background: var(--primary); border-color: var(--dark); color: var(--secondary);">
+                        <div class="view overlay">
+                            <div class="embed-responsive embed-responsive-16by9 card-img-top">
                                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/r6SBSZtdUEM"></iframe>
                             </div>
-                            <div class="card-body">
-                                <h5 class="my-1">Raid System</h5>
-                                <p class="card-text mb-3">This system was pretty straight forward, a police officer was able to kick in the door of a property to initiate a raid.</p>
-                            </div>
-                        </a>
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="my-1" style="color: var(--secondary);">Raid System</h5>
+                            <p class="card-text mb-3" style="text-decoration: none;">This system was pretty straight forward, a police officer was able to kick in the door of a property to initiate a raid.</p>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal" style="background: var(--gray); color: white;">
-                            <div class="embed-responsive embed-responsive-16by9 card-img-top h-50">
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="background: var(--primary); border-color: var(--dark); color: var(--secondary);">
+                        <div class="view overlay">
+                            <div class="embed-responsive embed-responsive-16by9 card-img-top">
                                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SZI9j11ElD0"></iframe>
                             </div>
-                            <div class="card-body">
-                                <h5 class="my-1">Animation Menu</h5>
-                                <p class="card-text mb-3">Pretty simple system, it allowed developers to add animations to a openable GUI, players could then use the menu to dance or play silly animations.</p>
-                            </div>
-                        </a>
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="my-1" style="color: var(--secondary);">Animation Menu</h5>
+                            <p class="card-text mb-3" style="text-decoration: none;">Pretty simple system, it allowed developers to add animations to a openable GUI, players could then use the menu to dance or play silly animations.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div class="my-5"><hr style="border-color: var(--gray);"></div>
 
-        <div class="my-1 justify-content-center slide animate__animated animate__fadeInUpBig" style="background: var(--dark);">
+        <div class="my-3 justify-content-center slide animate__animated animate__fadeInUpBig" style="background: rgba(255,255,255,0.02); border-color: rgba(0,0,0,0); color: var(--secondary);">
             <div class="container text-center">
                 <div id="arkfall"></div>
-                <div class="row justify-content-center"><a class="nav-link" style="color: white;"></a></div>
+                <div class="row justify-content-center"><a class="nav-link"></a></div>
                 <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/69/695c3598fd6d1f66407e7e2302000d82dc5b3ee4_full.jpg" style="max-height: 5rem !important; max-width: 5rem !important; border-radius: 50%;">
-                <h5 style="color: white;">Arkfall</h5>
-                <div class="row justify-content-center">
-                    <a class="nav-link" style="color: white;" href="https://steamcommunity.com/id/Arkfall/" target="_blank"><i style="font-weight: 1500; font-size: 1.8rem;" class="fab fa-steam-square"></i></a>
+                <h5 class="m-2" style="color: var(--secondary);">Arkfall</h5>
+                <div class="row justify-content-center my-2">
+                    <a class="nav-link" href="https://steamcommunity.com/id/Arkfall/" target="_blank"><i style="font-weight: 1500; font-size: 1.8rem; color: var(--secondary);" class="fab fa-steam-square"></i></a>
                 </div>
             </div>
 
-            <div class="tab-pane fade show in active ml-3 mr-3" id="panel31" role="tabpanel">
-                <div class="row">
-                    <div class="col-md-12 col-lg-4">
-                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal" style="background: var(--gray); color: white;">
+            <div class="row row-cols-1 row-cols-md-3 ml-3 mr-3">
+                <div class="col mb-4">
+                    <div class="card h-100" style="background: var(--primary); border-color: var(--dark); color: var(--secondary);">
+                        <div class="view overlay">
                             <img src="https://cdn.discordapp.com/attachments/669710541886980126/670341186225045545/20200124185016_1.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="my-1">House Asset</h5>
-                                <p class="card-text mb-3">House Asset by Arkfall.</p>
-                            </div>
-                        </a>
-                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal" style="background: var(--gray); color: white;">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="my-1" style="color: var(--secondary);">House Asset</h5>
+                            <p class="card-text mb-3" style="text-decoration: none;">House Asset by Arkfall.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="background: var(--primary); border-color: var(--dark); color: var(--secondary);">
+                        <div class="view overlay">
                             <img src="https://cdn.discordapp.com/attachments/669710541886980126/670339152302309416/20200124184728_1.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="my-1">Vehicle Pack</h5>
-                                <p class="card-text mb-3">Vehicle Pack by Arkfall.</p>
-                            </div>
-                        </a>
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="my-1" style="color: var(--secondary);">Vehicle Pack</h5>
+                            <p class="card-text mb-3" style="text-decoration: none;">Vehicle Pack by Arkfall.</p>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal" style="background: var(--gray); color: white;">
-                            <img src="https://cdn.discordapp.com/attachments/669710541886980126/670341190276743193/20200124185334_1.jpg" class="card-img-top h-50" alt="">
-                            <div class="card-body">
-                                <h5 class="my-1">House Asset</h5>
-                                <p class="card-text mb-3">House Asset by Arkfall.</p>
-                            </div>
-                        </a>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="background: var(--primary); border-color: var(--dark); color: var(--secondary);">
+                        <div class="view overlay">
+                            <img src="https://cdn.discordapp.com/attachments/669710541886980126/670341190276743193/20200124185334_1.jpg" class="card-img-top" alt="">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="my-1" style="color: var(--secondary);">House Asset</h5>
+                            <p class="card-text mb-3" style="text-decoration: none;">House Asset by Arkfall.</p>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal" style="background: var(--gray); color: white;">
-                            <img src="https://cdn.discordapp.com/attachments/669710541886980126/670341195058249728/20200124185601_1.jpg" class="card-img-top h-50" alt="">
-                            <div class="card-body">
-                                <h5 class="my-1">Private Jet</h5>
-                                <p class="card-text mb-3">Private Jet by Arkfall.</p>
-                            </div>
-                        </a>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="background: var(--primary); border-color: var(--dark); color: var(--secondary);">
+                        <div class="view overlay">
+                            <img src="https://cdn.discordapp.com/attachments/669710541886980126/670341195058249728/20200124185601_1.jpg" class="card-img-top" alt="">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="my-1" style="color: var(--secondary);">Private Jet</h5>
+                            <p class="card-text mb-3" style="text-decoration: none;">Private Jet by Arkfall.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div class="my-5"><hr style="border-color: var(--gray);"></div>
 
-        <div class="my-1 justify-content-center slide animate__animated animate__fadeInUpBig" style="background: var(--dark);">
+        <div class="my-3 justify-content-center slide animate__animated animate__fadeInUpBig" style="background: rgba(255,255,255,0.02); border-color: rgba(0,0,0,0); color: var(--secondary);">
             <div class="container text-center">
                 <div id="means240"></div>
-                <div class="row justify-content-center"><a class="nav-link" style="color: white;"></a></div>
+                <div class="row justify-content-center"><a class="nav-link"></a></div>
                 <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/c1/c160a5ca8d6ea574eeec60fec6409408c380c8b4_full.jpg" style="max-height: 5rem !important; max-width: 5rem !important; border-radius: 50%;">
-                <h5 style="color: white;">Means240</h5>
-                <div class="row justify-content-center">
-                    <a class="nav-link" style="color: white;" href="https://steamcommunity.com/profiles/76561198082230609/" target="_blank"><i style="font-weight: 1500; font-size: 1.8rem;" class="fab fa-steam-square"></i></a>
+                <h5 class="m-2" style="color: var(--secondary);">Means240</h5>
+                <div class="row justify-content-center my-2">
+                    <a class="nav-link" href="https://steamcommunity.com/profiles/76561198082230609/" target="_blank"><i style="font-weight: 1500; font-size: 1.8rem; color: var(--secondary);" class="fab fa-steam-square"></i></a>
                 </div>
             </div>
 
-            <div class="tab-pane fade show in active ml-3 mr-3" id="panel31" role="tabpanel">
-                <div class="row">
-                    <div class="col-md-12 col-lg-4">
-                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal" style="background: var(--gray); color: white;">
+            <div class="row row-cols-1 row-cols-md-3 ml-3 mr-3">
+                <div class="col mb-4">
+                    <div class="card h-100" style="background: var(--primary); border-color: var(--dark); color: var(--secondary);">
+                        <div class="view overlay">
                             <div class="embed-responsive embed-responsive-16by9 card-img-top">
                                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/unRLc2IayKE"></iframe>
                             </div>
-                            <div class="card-body">
-                                <h5 class="my-1">Public Vehicles</h5>
-                                <p class="card-text mb-3">This is a pack of public vehicles worked on by Means240 himself.</p>
-                            </div>
-                        </a>
-
-                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal" style="background: var(--gray); color: white;">
-                            <img src="content/cca1jMN.png" style="height: 21.1rem;" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="my-1">Civilian Vehicles</h5>
-                                <p class="card-text mb-3">This is a pack of public civilian vehicles worked on by Means240 himself.</p>
-                            </div>
-                        </a>
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="my-1" style="color: var(--secondary);">Public Vehicles</h5>
+                            <p class="card-text mb-3" style="text-decoration: none;">This is a pack of public vehicles worked on by Means240 himself.</p>
+                            <a href="https://drive.google.com/file/d/1oRsKx3bi7KyaSrqxg6B2Oa3MptqaK57u/view" target="_blank" class="btn btn-primary" style="background: rgba(255,255,255,0.02);">Download</a>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal" style="background: var(--gray); color: white; height: 28.25rem;">
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="background: var(--primary); border-color: var(--dark); color: var(--secondary);">
+                        <div class="view overlay">
+                            <img src="content/cca1jMN.png" class="card-img-top" alt="">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="my-1" style="color: var(--secondary);">Civilian Vehicles</h5>
+                            <p class="card-text mb-3" style="text-decoration: none;">This is a pack of public civilian vehicles worked on by Means240 himself.</p>
+                            <a href="https://drive.google.com/open?id=10v73ZanJ-ez85yqCm1FAw3iaUgxNZrKL" target="_blank" class="btn btn-primary" style="background: rgba(255,255,255,0.02);">Download</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="background: var(--primary); border-color: var(--dark); color: var(--secondary);">
+                        <div class="view overlay">
                             <div class="embed-responsive embed-responsive-16by9 card-img-top">
                                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mN4vaQdA9s8"></iframe>
                             </div>
-                            <div class="card-body">
-                                <h5 class="my-1">AS350 Helicopter</h5>
-                                <p class="card-text mb-3">This is a helicopter worked on by Means240 himself.</p>
-                            </div>
-                        </a>
-
-                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal" style="background: var(--gray); color: white; height: 28.25rem;">
-                            <img src="content/20191109214942_1.jpg" style="height: 21.1rem;" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="my-1">New Shoreham (Source)</h5>
-                                <p class="card-text mb-3">This is terrain source for a map worked on by Means240 himself.</p>
-                            </div>
-                        </a>
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="my-1" style="color: var(--secondary);">AS350 Helicopter</h5>
+                            <p class="card-text mb-3" style="text-decoration: none;">This is a helicopter worked on by Means240 himself.</p>
+                            <a href="https://drive.google.com/open?id=1wQ6U3ruXftEDPVoRAy96dnhxe-DPdqNd" target="_blank" class="btn btn-primary" style="background: rgba(255,255,255,0.02);">Download</a>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal" style="background: var(--gray); color: white;">
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="background: var(--primary); border-color: var(--dark); color: var(--secondary);">
+                        <div class="view overlay">
+                            <img src="content/20191109214942_1.jpg" class="card-img-top" alt="">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="my-1" style="color: var(--secondary);">New Shoreham (Source)</h5>
+                            <p class="card-text mb-3" style="text-decoration: none;">This is terrain source for a map worked on by Means240 himself.</p>
+                            <a href="https://www.dropbox.com/s/3vobm6733fwiupq/stuffs.7z?dl=0" target="_blank" class="btn btn-primary" style="background: rgba(255,255,255,0.02);">Download</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="background: var(--primary); border-color: var(--dark); color: var(--secondary);">
+                        <div class="view overlay">
                             <div class="embed-responsive embed-responsive-16by9 card-img-top">
                                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CWoDFS2_qpI"></iframe>
                             </div>
-                            <div class="card-body">
-                                <h5 class="my-1">Public Assets</h5>
-                                <p class="card-text mb-3">This is a pack of public assets worked on by Means240 himself.</p>
-                            </div>
-                        </a>
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="my-1" style="color: var(--secondary);">Public Assets</h5>
+                            <p class="card-text mb-3" style="text-decoration: none;">This is a pack of public assets worked on by Means240 himself.</p>
+                            <a href="https://drive.google.com/open?id=1UBAQrbzWvhkiMqz386L5EdXyxVGpBb5u" target="_blank" class="btn btn-primary" style="background: rgba(255,255,255,0.02);">Download</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div class="my-5"><hr style="border-color: var(--gray);"></div>
 
-        <div class="my-1 justify-content-center slide animate__animated animate__fadeInUpBig" style="background: var(--dark);">
+        <div class="my-3 justify-content-center slide animate__animated animate__fadeInUpBig" style="background: rgba(255,255,255,0.02); border-color: rgba(0,0,0,0); color: var(--secondary);">
             <div class="container text-center">
                 <div id="Kangaro0"></div>
-                <div class="row justify-content-center"><a class="nav-link" style="color: white;"></a></div>
+                <div class="row justify-content-center"><a class="nav-link"></a></div>
                 <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/78/787d952a22b0453cacac7bd8c5fc86f2cddb462a_full.jpg" style="max-height: 5rem !important; max-width: 5rem !important; border-radius: 50%;">
-                <h5 style="color: white;">Kangaro0</h5>
-                <div class="row justify-content-center">
-                    <a class="nav-link" style="color: white;" href="https://steamcommunity.com/id/kangaro0" target="_blank"><i style="font-weight: 1500; font-size: 1.8rem;" class="fab fa-steam-square"></i></a>
+                <h5 class="m-2" style="color: var(--secondary);">Kangaro0</h5>
+                <div class="row justify-content-center my-2">
+                    <a class="nav-link" href="https://steamcommunity.com/id/kangaro0" target="_blank"><i style="font-weight: 1500; font-size: 1.8rem; color: var(--secondary);" class="fab fa-steam-square"></i></a>
                 </div>
             </div>
 
-            <div class="tab-pane fade show in active ml-3 mr-3" id="panel31" role="tabpanel">
-                <div class="row">
-                    <div class="col-md-12 col-lg-4">
-                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal" style="background: var(--gray); color: white;">
+            <div class="row row-cols-1 row-cols-md-3 ml-3 mr-3">
+                <div class="col mb-4">
+                    <div class="card h-100" style="background: var(--primary); border-color: var(--dark); color: var(--secondary);">
+                        <div class="view overlay">
                             <div class="embed-responsive embed-responsive-16by9 card-img-top">
                                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fan7h8ZfOjE"></iframe>
                             </div>
-                            <div class="card-body">
-                                <h5 class="my-1">Police Station</h5>
-                                <p class="card-text mb-3">Police station by Kangaro0.</p>
-                            </div>
-                        </a>
-                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal" style="background: var(--gray); color: white;">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="my-1" style="color: var(--secondary);">Police Station</h5>
+                            <p class="card-text mb-3" style="text-decoration: none;">Police station by Kangaro0.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="background: var(--primary); border-color: var(--dark); color: var(--secondary);">
+                        <div class="view overlay">
                             <div class="embed-responsive embed-responsive-16by9 card-img-top">
                                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0xZS6ar_tl4"></iframe>
                             </div>
-                            <div class="card-body">
-                                <h5 class="my-1">Fire Station</h5>
-                                <p class="card-text mb-3">Fire station by Kangaro0.</p>
-                            </div>
-                        </a>
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="my-1" style="color: var(--secondary);">Fire Station</h5>
+                            <p class="card-text mb-3" style="text-decoration: none;">Fire station by Kangaro0.</p>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal" style="background: var(--gray); color: white; height: 28.25rem;">
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="background: var(--primary); border-color: var(--dark); color: var(--secondary);">
+                        <div class="view overlay">
                             <div class="embed-responsive embed-responsive-16by9 card-img-top">
                                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xP6MvI5SQUo"></iframe>
                             </div>
-                            <div class="card-body">
-                                <h5 class="my-1">Bank / Federal Reserve</h5>
-                                <p class="card-text mb-3">Bank / Federal Reserve by Kangaro0.</p>
-                            </div>
-                        </a>
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="my-1" style="color: var(--secondary);">Bank / Federal Reserve</h5>
+                            <p class="card-text mb-3" style="text-decoration: none;">Bank / Federal Reserve by Kangaro0.</p>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal" style="background: var(--gray); color: white; height: 28.25rem;">
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="background: var(--primary); border-color: var(--dark); color: var(--secondary);">
+                        <div class="view overlay">
                             <div class="embed-responsive embed-responsive-16by9 card-img-top">
                                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/M92xoupDTGc"></iframe>
                             </div>
-                            <div class="card-body">
-                                <h5 class="my-1">Courthouse</h5>
-                                <p class="card-text mb-3">Courthouse by Kangaro0.</p>
-                            </div>
-                        </a>
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="my-1" style="color: var(--secondary);">Courthouse</h5>
+                            <p class="card-text mb-3" style="text-decoration: none;">Courthouse by Kangaro0.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div class="my-5"><hr style="border-color: var(--gray);"></div>
 
-        <div class="my-1 justify-content-center slide animate__animated animate__fadeInUpBig" style="background: var(--dark);">
+        <div class="my-3 justify-content-center slide animate__animated animate__fadeInUpBig" style="background: rgba(255,255,255,0.02); border-color: rgba(0,0,0,0); color: var(--secondary);">
             <div class="container text-center">
                 <div id="JohnDoe"></div>
-                <div class="row justify-content-center"><a class="nav-link" style="color: white;"></a></div>
+                <div class="row justify-content-center"><a class="nav-link"></a></div>
                 <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/39/39b4eacf0dd2084cee9bf1d1e56674d40210893d_full.jpg" style="max-height: 5rem !important; max-width: 5rem !important; border-radius: 50%;">
-                <h5 style="color: white;">John Doe</h5>
-                <div class="row justify-content-center">
-                    <a class="nav-link" style="color: white;" href="https://steamcommunity.com/profiles/76561198062192032/" target="_blank"><i style="font-weight: 1500; font-size: 1.8rem;" class="fab fa-steam-square"></i></a>
+                <h5 class="m-2" style="color: var(--secondary);">John Doe</h5>
+                <div class="row justify-content-center my-2">
+                    <a class="nav-link" href="https://steamcommunity.com/profiles/76561198062192032/" target="_blank"><i style="font-weight: 1500; font-size: 1.8rem; color: var(--secondary);" class="fab fa-steam-square"></i></a>
                 </div>
             </div>
 
-            <div class="tab-pane fade show in active ml-3 mr-3" id="panel31" role="tabpanel">
-                <div class="row">
-                    <div class="col-md-12 col-lg-4">
-                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal" style="background: var(--gray); color: white;">
+            <div class="row row-cols-1 row-cols-md-3 ml-3 mr-3">
+                <div class="col mb-4">
+                    <div class="card h-100" style="background: var(--primary); border-color: var(--dark); color: var(--secondary);">
+                        <div class="view overlay">
                             <img src="https://steamuserimages-a.akamaihd.net/ugc/1464184469239301313/74C2CC9D56169130C1318BB7E897A5C199A3BB3E/" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="my-1">Prison</h5>
-                                <p class="card-text mb-3">Prison by John Doe.</p>
-                            </div>
-                        </a>
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="my-1" style="color: var(--secondary);">Prison</h5>
+                            <p class="card-text mb-3" style="text-decoration: none;">Prison by John Doe.</p>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal" style="background: var(--gray); color: white; height: 28.25rem;">
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="background: var(--primary); border-color: var(--dark); color: var(--secondary);">
+                        <div class="view overlay">
                             <img src="https://steamuserimages-a.akamaihd.net/ugc/1289667686749203962/A536D1415B5B6B59CC1EBAD0416C630DC42007DE/" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="my-1">Jewelry Store</h5>
-                                <p class="card-text mb-3">Jewelry Store by John Doe.</p>
-                            </div>
-                        </a>
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="my-1" style="color: var(--secondary);">Jewelry Store</h5>
+                            <p class="card-text mb-3" style="text-decoration: none;">Jewelry Store by John Doe.</p>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal" style="background: var(--gray); color: white; height: 28.25rem;">
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="background: var(--primary); border-color: var(--dark); color: var(--secondary);">
+                        <div class="view overlay">
                             <img src="https://cdn.discordapp.com/attachments/682081547704205407/682082238740955166/107410_screenshots_20200217173144_1.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="my-1">Clocktower</h5>
-                                <p class="card-text mb-3">Clocktower by John Doe.</p>
-                            </div>
-                        </a>
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="my-1" style="color: var(--secondary);">Clocktower</h5>
+                            <p class="card-text mb-3" style="text-decoration: none;">Clocktower by John Doe.</p>
+                        </div>
                     </div>
                 </div>
             </div>
