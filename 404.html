@@ -9,29 +9,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" />
-    <script src="https://kit.fontawesome.com/c74f645bc1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.0/css/all.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <!-- mdbootstrap -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
-<body style="background: var(--primary);">
+<body style="background: var(--primary); width: 100% !important; padding-right: 15px !important; padding-left: 15px !important; padding-top: 15px !important; padding-bottom: 15px !important; margin-right: auto !important; margin-left: auto !important;">
     <div class="pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
-            <navibar class="nav nav-pills nav-justified justify-content-center animate__animated animate__fadeInDown p-3" style="background: rgba(255,255,255,0.02);">
-                <li class="nav-item" style="background: rgba(255,255,255,0.02);">
-                    <a class="nav-link font-weight-bold" style="font-size: 0.9rem !important; color: var(--secondary);" href="../index.html"><i style="font-size: 0.9rem !important; font-weight: 1500;" class="fas fa-mug-hot"></i> Home</a>
-                </li>
-                <li class="nav-item" style="background: rgba(255,255,255,0.02);">
-                    <a class="nav-link font-weight-bold" style="font-size: 0.9rem !important; color: var(--secondary);" href="/releases/index.html"><i style="font-size: 0.9rem !important; font-weight: 1500;" class="fas fa-code"></i> Releases</a>
-                </li>
-                <li class="nav-item" style="background: rgba(255,255,255,0.02);">
-                    <a class="nav-link font-weight-bold" style="font-size: 0.9rem !important; color: var(--secondary);" href="#soonTM"><i style="font-size: 0.9rem !important; font-weight: 1500;" class="fas fa-folder-open"></i> Projects</a>
-                </li>
-            </navibar>
+        <div class="collapse container text-center" id="navbarToggleExternalContent">
+            <form class="container-fluid py-3 align-items-center justify-content-center"></form>
+                <a class="mx-auto text-center" href="https://steamcommunity.com/id/GamingOnline/" target="_blank"><img width="110" class="rounded-circle img-fluid navbarP" src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/41/41a7cf642063d1cea0b93c3ca0e754e59ff6fe16_full.jpg" alt=""></a>
+            </form>
+            <form class="container-fluid justify-content-start p-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 p-2">
+                            <a href="index.html" class="btn btn-secondary rounded-0 w-100 fw-bolder bg-transparent text-white border-bottom border-0 text-uppercase navbarB" style="background-color: #1e1e1e !important; filter: opacity(0.5);"><i class="fas fa-mug-hot fw-bolder"></i> Home</a>
+                        </div>
+                        <div class="col-md-4 p-2">
+                            <a href="/releases/" class="btn btn-secondary rounded-0 w-100 fw-bolder bg-transparent text-white border-bottom border-0 text-uppercase navbarB" style="background-color: #1e1e1e !important; filter: opacity(0.5);"><i class="fas fa-folder-open fw-bolder"></i> Releases</a>
+                        </div>
+                        <div class="col-md-4 p-2">
+                            <a href="#soonTM" class="btn btn-secondary rounded-0 w-100 fw-bolder bg-transparent text-white border-bottom border-0 text-uppercase navbarB" style="background-color: #1e1e1e !important; filter: opacity(0.5);"><i class="fas fa-code fw-bolder"></i> Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
-        <nav class="navbar navbar-dark slide animate__animated animate__fadeInDownBig" style="background: rgba(255,255,255,0.02);">
+        <nav class="navbar navbar-dark slide" style="background: rgba(255,255,255,0.02);">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,15 +51,17 @@
     </div>
 
     <info>
-        <div class="alert alert-warning text-center rounded-0 animate__animated animate__fadeInDownBig my-3" role="alert" style="background: rgba(255,255,255,0.02); border-color: rgba(0,0,0,0); color: var(--secondary);">
-            <h4 class="alert-heading"><i style="vertical-align: top !important; font-weight: 1000; font-size: 1.4rem;" class="fas fa-exclamation-triangle"></i> Error</h4>
-            <p style="font-size: 1.05 rem !important;">Error 404 Not Found</p>
-            <a href="../index.html" class="btn btn-primary" style="background: rgba(255,255,255,0.02);">Take Me Back To The Landing Page</a>
+        <div class="py-1">
+            <div class="alert alert-warning text-center rounded-0 border-0 my-0" style="background-color: rgba(255,255,255,0.02);" role="alert">
+                <h3 class="alert-heading text-white"><i class="fas fa-exclamation-triangle"></i> Error</h3>
+                <a class="text-white font-weight-normal">Error 404 Not Found</a>
+                <a href="index.html" class="my-2 btn btn-secondary rounded-0 w-100 fw-bolder bg-transparent text-white border-bottom border-0 text-uppercase navbarB text-center" style="background-color: #1a1a1a !important; filter: opacity(0.5);"><i class="fas fa-mug-hot fw-bolder"></i> Return to the home page.</a>
+            </div>
         </div>
     </info>
 
     <custom>
-        <div class="media embed-responsive embed-responsive-16by9 slide animate__animated animate__slideInUp">
+        <div class="media embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/o48KzPa42_o?loop=1" style="filter: grayscale(100%);" allowfullscreen></iframe>
         </div>
     </custom>
@@ -56,6 +70,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 
 </html>
