@@ -1,0 +1,66 @@
+.experience-picture {
+    height: 20rem !important; 
+    width: 20rem !important; 
+    border: solid 3px white !important;
+}
+.experience-text {
+    width: 98.5%; 
+    margin-top: 9.2rem;
+    font-size: 1rem;
+}
+.welcome-text {
+    font-size: 1.5rem;
+}
+.welcome-text-normal {
+    font-size: 1.1rem;
+}
+.notification-text {
+    font-size: 1.05rem;
+}
+.notification-text-normal {
+    font-size: 0.9rem;
+}
+.experience-text-bold {
+    font-size: 1.05rem;
+}
+.contribution-text {
+    font-size: 1.05rem;
+}
+
+@media only screen and (max-width: 400px) {
+    .experience-picture {
+        height: 16rem !important; 
+        width: 16rem !important; 
+        border: solid 3px white !important;
+    }
+    .experience-text {
+        width: 94%; 
+        margin-top: 7.2rem;
+        font-size: 0.8rem;
+    }
+    .welcome-text {
+        font-size: 1.05rem;
+    }
+    .welcome-text-normal {
+        font-size: 0.9rem;
+    }
+    .notification-text {
+        font-size: 1.05rem;
+    }
+    .notification-text-normal {
+        font-size: 0.9rem;
+    }
+    .experience-text-bold {
+        font-size: 1.05rem;
+    }
+    .contribution-text {
+        font-size: 1.05rem;
+    }
+    .explain-text-normal {
+        font-size: 0.9rem;
+    }
+    .showcase-images {
+        max-height: 12rem;
+        max-width: 25rem;
+    }
+}

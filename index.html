@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/custom.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" />
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.0/css/all.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,7 +24,7 @@
         <div class="pos-f-t">
             <div class="collapse container text-center" id="navbarToggleExternalContent">
                 <form class="container-fluid py-3 align-items-center justify-content-center"></form>
-                    <a class="mx-auto text-center" href="https://steamcommunity.com/id/GamingOnline/" target="_blank"><img width="110" class="rounded-circle img-fluid navbarP" src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/41/41a7cf642063d1cea0b93c3ca0e754e59ff6fe16_full.jpg" alt=""></a>
+                    <a class="mx-auto text-center" href="https://steamcommunity.com/id/GamingOnline/" target="_blank"><img width="110" class="rounded-circle img-fluid navbarP" style="border: solid 3px white !important;" src="content/gaming.jpg" alt=""></a>
                 </form>
                 <form class="container-fluid justify-content-start p-3">
                     <div class="container">
@@ -51,45 +52,51 @@
         <info>
             <div class="py-1">
                 <div class="alert alert-warning text-center rounded-0 border-0 my-0" style="background-color: rgba(255,255,255,0.02);" role="alert">
-                    <h3 class="alert-heading text-white"><i class="fas fa-info-circle"></i> Information</h3>
-                    <a class="text-white font-weight-normal">If you are looking for any specific arma content made by me or any of my friends you can join the Eden Engineering <a class="text-white" href="https://discord.gg/KdTCyFv">discord server.</a></a>
+                    <h3 class="alert-heading text-white notification-text"><i class="fas fa-info-circle"></i> Information</h3>
+                    <a class="text-white font-weight-normal notification-text-normal">If you are looking for any specific arma content made by me or any of my friends you can join the Eden Engineering <a class="text-white" href="https://discord.gg/KdTCyFv">discord server.</a></a>
                 </div>
             </div>
         </info>
 
         <custom>
             <div class="jumbotron text-center my-0" style="background: rgba(255,255,255,0.02);">
-                <h1 class="text-white">Welcome!</h1>
-                <p class="text-white font-weight-normal lead">Here you can find information about myself, my public development releases and development releases from friends of mine.</p>
+                <h1 class="text-white welcome-text">Welcome!</h1>
+                <p class="text-white font-weight-normal lead welcome-text-normal">Here you can find information about myself, my public development releases and development releases from friends of mine.</p>
             </div>
 
             <div class="my-1" style="background: rgba(255,255,255,0.02) !important;">
-                <h4 class="text-center text-white font-weight-bold py-4">I have experience in...</h4>
-                <div class="text-center align-items-center justify-content-center">
+                <h4 class="experience-text-bold text-center text-white font-weight-bold py-4">I have experience in...</h4>
+
+                <div class="text-center align-items-center">
                     <div class="py-3 text-white font-weight-bold">
-                        <p class="text-uppercase">Game Assets (3D Rigging)</p>
-                        <img src="content/S0Vdgk5Xs6.gif" style="height: 15rem !important; width: 15rem !important; transform: rotate(5deg); border: solid 3px white !important;" class="rounded-circle img-fluid" alt="...">
+                        <p class="text-uppercase position-absolute experience-text">Game Assets (3D Rigging)</p>
+                        <img class="rounded-circle img-fluid experience-picture" src="content/bMhCu1GUSe.png" alt="...">
                     </div>
                     <div class="py-3 text-white font-weight-bold">
-                        <p class="text-uppercase">Scripting (SQF)</p>
-                        <img src="content/HxjpuRqP1Z.png" style="height: 15rem !important; width: 15rem !important; transform: rotate(-2deg); border: solid 3px white !important;" class="rounded-circle img-fluid" alt="...">
+                        <p class="text-uppercase position-absolute experience-text">Scripting (SQF)</p>
+                        <img class="rounded-circle img-fluid experience-picture" src="content/HxjpuRqP1Z.png" alt="...">
                     </div>
                 </div>
+
+                <h4 class="text-center text-white font-weight-bold py-4"></h4>
             </div>
         </custom>
 
         <projects>
             <div class="py-2 text-center align-items-center justify-content-center" style="background: rgba(255,255,255,0.02);">
-                <a class="font-weight-bold text-white text-uppercase">Development Contribution</a>
-                <div class="text-center py-2 align-items-center justify-content-center">
-                    <a href="https://forums.arma-studios.com" target="_blank"><img src="content\SHORT31.png" style="width: 4rem !important; filter: opacity(0.5);" class="px-1 img-fluid icons"></a>
+                <a class="font-weight-bold text-white text-uppercase contribution-text">Development Contribution</a>
+                <div class="text-center py-3 align-items-center justify-content-center">
+                    <a href="https://spero.gg" target="_blank"><img src="content/Spero.png" style="width: 4rem !important; filter: opacity(0.5);" class="px-1 img-fluid icons" title="Spero Damascus County"></a>
                 </div>
                 <div class="text-center align-items-center justify-content-center">
-                    <img src="content/OASIS.png" style="height: 2.5rem !important; filter: opacity(0.5);" class="px-1 img-fluid icons">
-                    <img src="content/EE.png" style="height: 2.5rem !important; filter: opacity(0.5);" class="px-1 img-fluid icons">
-                    <img src="content/SL.png" style="height: 3rem !important; filter: opacity(0.5);" class="px-1 img-fluid icons">
-                    <img src="content/Nodus.png" style="height: 2.5rem !important; filter: opacity(0.5);" class="px-1 img-fluid icons">
-                    <a href="https://sperogaming.com"><img src="content/Spero.png" style="height: 2.5rem !important; filter: opacity(0.5);" class="px-1 img-fluid icons"></a>
+                    <img src="content\SHORT31.png" style="height: 2.5rem !important; filter: opacity(0.5);" class="px-1 img-fluid icons" title="Arma Studios">
+                </div>
+                <div class="text-center align-items-center justify-content-center">
+                    <img src="content/OASIS.png" style="height: 2.5rem !important; filter: opacity(0.5);" class="px-1 img-fluid icons" title="Oasis Roleplay">
+                    <img src="content/EE.png" style="height: 2.5rem !important; filter: opacity(0.5);" class="px-1 img-fluid icons" title="New Eden RP">
+                    <img src="content/SL.png" style="height: 3rem !important; filter: opacity(0.5);" class="px-1 img-fluid icons" title="Sinister Life">
+                    <img src="content/Nodus.png" style="height: 2.5rem !important; filter: opacity(0.5);" class="px-1 img-fluid icons" title="Nodus Life">
+                    <img src="content/Spero.png" style="height: 2.5rem !important; filter: opacity(0.5);" class="px-1 img-fluid icons" title="Spero Takistan">
                 </div>
             </div>
         </projects>
