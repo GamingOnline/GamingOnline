@@ -14,89 +14,100 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" />
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.0/css/all.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
+
+        <style>
+            :root {
+                --background:#101113;
+                --foreground: #38373785;
+                --interactable: #101113;
+            }
+        </style>
         
         <!-- mdbootstrap -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
 
-    <body style="background-color: #1a1a1a; width: 100% !important; padding-right: 15px !important; padding-left: 15px !important; padding-top: 15px !important; padding-bottom: 15px !important; margin-right: auto !important; margin-left: auto !important;">
-        <div class="pos-f-t">
-            <div class="collapse container text-center" id="navbarToggleExternalContent">
+    <body style="background-color: var(--background) !important; width: 100% !important; padding-right: 15px !important; padding-left: 15px !important; padding-top: 15px !important; padding-bottom: 15px !important; margin-right: auto !important; margin-left: auto !important;">
+
+        <div class="g506-border pos-f-t my-1" style="background-color: var(--foreground);">
+            <div class="container text-center">
                 <form class="container-fluid py-3 align-items-center justify-content-center"></form>
-                    <a class="mx-auto text-center" href="https://steamcommunity.com/id/GamingOnline/" target="_blank"><img width="110" class="rounded-circle img-fluid navbarP" style="border: solid 3px white !important;" src="content/gaming.jpg" alt=""></a>
+                    <a class="mx-auto text-center" href="https://steamcommunity.com/id/GamingOnline/" target="_blank"><img width="110" class="img-fluid g506-profile" src="content/G506_Logo.png" alt=""></a>
                 </form>
                 <form class="container-fluid justify-content-start p-3">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-4 p-2">
-                                <a href="#" class="btn btn-secondary rounded-0 w-100 fw-bolder bg-transparent text-white border-bottom border-0 text-uppercase navbarB" style="background-color: #1e1e1e !important; filter: opacity(0.5);"><i class="fas fa-mug-hot fw-bolder"></i> Home</a>
+                                <a href="#" class="btn btn-secondary rounded-0 w-100 fw-bolder bg-transparent text-white border-bottom border-0 text-uppercase g506-button" style="background-color: var(--interactable) !important; filter: opacity(0.5);"><i class="fas fa-mug-hot fw-bolder"></i> Home</a>
                             </div>
                             <div class="col-md-4 p-2">
-                                <a href="releases/index.html" class="btn btn-secondary rounded-0 w-100 fw-bolder bg-transparent text-white border-bottom border-0 text-uppercase navbarB" style="background-color: #1e1e1e !important; filter: opacity(0.5);"><i class="fas fa-folder-open fw-bolder"></i> Releases</a>
+                                <a href="releases/index.html" class="btn btn-secondary rounded-0 w-100 fw-bolder bg-transparent text-white border-bottom border-0 text-uppercase g506-button" style="background-color: var(--interactable) !important; filter: opacity(0.5);"><i class="fas fa-folder-open fw-bolder"></i> Releases</a>
                             </div>
                             <div class="col-md-4 p-2">
-                                <a href="#soonTM" class="btn btn-secondary rounded-0 w-100 fw-bolder bg-transparent text-white border-bottom border-0 text-uppercase navbarB" style="background-color: #1e1e1e !important; filter: opacity(0.5);"><i class="fas fa-code fw-bolder"></i> Projects</a>
+                                <a href="#soonTM" class="btn btn-secondary rounded-0 w-100 fw-bolder bg-transparent text-white border-bottom border-0 text-uppercase g506-button" style="background-color: var(--interactable) !important; filter: opacity(0.5);"><i class="fas fa-code fw-bolder"></i> Projects</a>
                             </div>
                         </div>
                     </div>
                 </form>
             </div>
-            <nav class="navbar navbar-dark slide" style="background: rgba(255,255,255,0.02);">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
+
+            <info>
+                <div class="alert alert-warning text-center rounded-0 border-0 my-0" style="background-color: var(--foreground); border-bottom-left-radius: 0.8rem !important; border-bottom-right-radius: 0.8rem !important;" role="alert">
+                    <h3 class="alert-heading text-white g506-notification-text"><i class="fas fa-info-circle"></i> Information</h3>
+                    <a class="text-white font-weight-normal g506-notification-text-normal">Looking for development releases or help with anything Arma related? join the Eden Engineering <a class="text-white" href="https://discord.gg/KdTCyFv">discord server!</a></a>
+                </div>
+            </info>
+
         </div>
 
-        <info>
-            <div class="py-1">
-                <div class="alert alert-warning text-center rounded-0 border-0 my-0" style="background-color: rgba(255,255,255,0.02);" role="alert">
-                    <h3 class="alert-heading text-white notification-text"><i class="fas fa-info-circle"></i> Information</h3>
-                    <a class="text-white font-weight-normal notification-text-normal">If you are looking for any specific arma content made by me or any of my friends you can join the Eden Engineering <a class="text-white" href="https://discord.gg/KdTCyFv">discord server.</a></a>
-                </div>
-            </div>
-        </info>
-
         <custom>
-            <div class="jumbotron text-center my-0" style="background: rgba(255,255,255,0.02);">
-                <h1 class="text-white welcome-text">Welcome!</h1>
-                <p class="text-white font-weight-normal lead welcome-text-normal">Here you can find information about myself, my public development releases and development releases from friends of mine.</p>
+            <div class="py-1">
+                <div class="g506-border jumbotron text-center my-0 py-4" style="background: var(--foreground);">
+                    <h1 class="text-white g506-welcome-text">Welcome!</h1>
+                    <p class="text-white font-weight-normal lead g506-welcome-text-normal">Here you can find information about myself, my public development releases and future projects that I will be working on.</p>
+                </div>
             </div>
 
-            <div class="my-1" style="background: rgba(255,255,255,0.02) !important;">
-                <h4 class="experience-text-bold text-center text-white font-weight-bold py-4">I have experience in...</h4>
-
-                <div class="text-center align-items-center">
-                    <div class="py-3 text-white font-weight-bold">
-                        <p class="text-uppercase position-absolute experience-text">Game Assets (3D Rigging)</p>
-                        <img class="rounded-circle img-fluid experience-picture" src="content/bMhCu1GUSe.png" alt="...">
-                    </div>
-                    <div class="py-3 text-white font-weight-bold">
-                        <p class="text-uppercase position-absolute experience-text">Scripting (SQF)</p>
-                        <img class="rounded-circle img-fluid experience-picture" src="content/HxjpuRqP1Z.png" alt="...">
+            <div class="g506-border justify-content-center slide my-1" style="background: var(--foreground); color: var(--secondary);">
+                <div class="text-center">
+                    <div class="pos-f-t py-3" style="border-bottom-left-radius: 0.8rem !important; border-bottom-right-radius: 0.8rem !important;">
+                        <h4 class="g506-experience-text-bold text-center text-white font-weight-bold py-4">I have experience in...</h4>
+                        <div class="row row-cols-1 row-cols-md-3 text-center justify-content-center px-3">
+                            <div class="py-3 col mb-4 text-white font-weight-bold">
+                                <p class="text-uppercase position-absolute g506-experience-text">Game Assets (3D Rigging)</p>
+                                <img class="g506-border img-fluid g506-experience-picture" src="content/bMhCu1GUSe.png" alt="...">
+                            </div>
+                            <div class="py-3 col mb-4 text-white font-weight-bold">
+                                <p class="text-uppercase position-absolute g506-experience-text">Scripting (SQF)</p>
+                                <img class="g506-border img-fluid g506-experience-picture" src="content/HxjpuRqP1Z.png" alt="...">
+                            </div>
+                            <div class="py-3 col mb-4 text-white font-weight-bold">
+                                <p class="text-uppercase position-absolute g506-experience-text">A2/A3/GTAV Asset Porting</p>
+                                <img class="g506-border img-fluid g506-experience-picture" src="content/IfSqGH3dNC.png" alt="...">
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <h4 class="text-center text-white font-weight-bold py-4"></h4>
             </div>
         </custom>
 
         <projects>
-            <div class="py-2 text-center align-items-center justify-content-center" style="background: rgba(255,255,255,0.02);">
-                <a class="font-weight-bold text-white text-uppercase contribution-text">Development Contribution</a>
+            <div class="g506-border py-2 my-2 text-center align-items-center justify-content-center" style="background: var(--foreground);">
+                <a class="font-weight-bold text-white text-uppercase g506-contribution-text">Development Contribution</a>
                 <div class="text-center py-3 align-items-center justify-content-center">
-                    <a href="https://spero.gg" target="_blank"><img src="content/Spero.png" style="width: 4rem !important; filter: opacity(0.5);" class="px-1 img-fluid icons" title="Spero Damascus County"></a>
+                    <a href="https://steamcommunity.com/id/GamingOnline/myworkshopfiles/" target="_blank"><img src="content/G506_Logo.png" style="width: 4rem !important; filter: opacity(0.5);" class="px-1 img-fluid g506-icons" title="Steam Workshop"></a>
                 </div>
                 <div class="text-center align-items-center justify-content-center">
-                    <img src="content\SHORT31.png" style="height: 2.5rem !important; filter: opacity(0.5);" class="px-1 img-fluid icons" title="Arma Studios">
+                    <img src="content\SHORT31.png" style="height: 2.5rem !important; filter: opacity(0.5);" class="px-1 img-fluid g506-icons" title="Arma Studios">
+                    <img src="content/Spero.png" style="height: 2.5rem !important; filter: opacity(0.5);" class="px-1 img-fluid g506-icons" title="Spero Damascus County / Spero Takistan">
                 </div>
                 <div class="text-center align-items-center justify-content-center">
-                    <img src="content/OASIS.png" style="height: 2.5rem !important; filter: opacity(0.5);" class="px-1 img-fluid icons" title="Oasis Roleplay">
-                    <img src="content/EE.png" style="height: 2.5rem !important; filter: opacity(0.5);" class="px-1 img-fluid icons" title="New Eden RP">
-                    <img src="content/SL.png" style="height: 3rem !important; filter: opacity(0.5);" class="px-1 img-fluid icons" title="Sinister Life">
-                    <img src="content/Nodus.png" style="height: 2.5rem !important; filter: opacity(0.5);" class="px-1 img-fluid icons" title="Nodus Life">
-                    <img src="content/Spero.png" style="height: 2.5rem !important; filter: opacity(0.5);" class="px-1 img-fluid icons" title="Spero Takistan">
+                    <img src="content/OASIS.png" style="height: 2.5rem !important; filter: opacity(0.5);" class="px-1 img-fluid g506-icons" title="Oasis Roleplay">
+                    <img src="content/EE.png" style="height: 2.5rem !important; filter: opacity(0.5);" class="px-1 img-fluid g506-icons" title="New Eden RP">
+                    <img src="content/SL.png" style="height: 3rem !important; filter: opacity(0.5);" class="px-1 img-fluid g506-icons" title="Sinister Life">
+                    <img src="content/Nodus.png" style="height: 2.5rem !important; filter: opacity(0.5);" class="px-1 img-fluid g506-icons" title="Nodus Life">
+                    <img src="content/Spero.png" style="height: 2.5rem !important; filter: opacity(0.5);" class="px-1 img-fluid g506-icons" title="Spero Takistan">
                 </div>
             </div>
         </projects>

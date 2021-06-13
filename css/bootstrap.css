@@ -43,26 +43,6 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.iconrelease:hover {
-  filter: opacity(1) !important;
-  transition: 100ms !important;
-}
-
-.navbarP:hover {
-  border: solid 3px white !important;
-  transition: 100ms;
-}
-
-.navbarB:hover {
-  filter: opacity(1) !important;
-  transition: 100ms;
-}
-
-.icons:hover {
-  filter: opacity(1) !important;
-  transition: 100ms;
-}
-
 *,
 *::before,
 *::after {

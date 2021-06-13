@@ -1,66 +1,108 @@
-.experience-picture {
+.g506-experience-picture {
     height: 20rem !important; 
     width: 20rem !important; 
     border: solid 3px white !important;
 }
-.experience-text {
-    width: 98.5%; 
+.g506-experience-text {
+    width: 95%; 
     margin-top: 9.2rem;
     font-size: 1rem;
 }
-.welcome-text {
+.g506-welcome-text {
     font-size: 1.5rem;
 }
-.welcome-text-normal {
+.g506-welcome-text-normal {
     font-size: 1.1rem;
 }
-.notification-text {
+.g506-notification-text {
     font-size: 1.05rem;
 }
-.notification-text-normal {
+.g506-notification-text-normal {
     font-size: 0.9rem;
 }
-.experience-text-bold {
+.g506-experience-text-bold {
     font-size: 1.05rem;
 }
-.contribution-text {
+.g506-contribution-text {
     font-size: 1.05rem;
 }
 
+.g506-profile {
+    filter: opacity(0.75) !important;
+    transition: 100ms;
+}
+  
+.g506-profile:hover {
+    filter: opacity(1) !important;
+    transition: 100ms;
+}
+
+.g506-button {
+    filter: opacity(0.75) !important;
+    border-radius: 0.8rem !important;
+    transition: 100ms;
+}
+
+.g506-button:hover {
+    filter: opacity(1) !important;
+    transition: 100ms;
+}
+
+.g506-icons {
+    filter: opacity(0.75) !important;
+    transition: 100ms;
+}
+
+.g506-icons:hover {
+    filter: opacity(1) !important;
+    transition: 100ms;
+}
+
+.g506-border {
+    border-radius: 0.8rem !important;
+}
+
+.g506-release-images {
+    height: 22rem !important;
+}
+
 @media only screen and (max-width: 400px) {
-    .experience-picture {
+    .g506-experience-picture {
         height: 16rem !important; 
         width: 16rem !important; 
         border: solid 3px white !important;
     }
-    .experience-text {
+    .g506-experience-text {
         width: 94%; 
         margin-top: 7.2rem;
         font-size: 0.8rem;
     }
-    .welcome-text {
+    .g506-welcome-text {
         font-size: 1.05rem;
     }
-    .welcome-text-normal {
+    .g506-welcome-text-normal {
         font-size: 0.9rem;
     }
-    .notification-text {
+    .g506-notification-text {
         font-size: 1.05rem;
     }
-    .notification-text-normal {
+    .g506-notification-text-normal {
         font-size: 0.9rem;
     }
-    .experience-text-bold {
+    .g506-experience-text-bold {
         font-size: 1.05rem;
     }
-    .contribution-text {
+    .g506-contribution-text {
         font-size: 1.05rem;
     }
-    .explain-text-normal {
+    .g506-explain-text-normal {
         font-size: 0.9rem;
     }
-    .showcase-images {
+    .g506-showcase-images {
         max-height: 12rem;
         max-width: 25rem;
+    }
+    .g506-release-images {
+        height: 12rem !important;
     }
 }

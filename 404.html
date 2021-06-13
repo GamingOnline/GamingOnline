@@ -26,6 +26,9 @@
         */
         @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap");
         :root {
+        --background:#101113;
+        --foreground: #38373785;
+        --interactable: #101113;
         --blue: #007bff;
         --indigo: #6610f2;
         --purple: #6f42c1;
@@ -10181,6 +10184,108 @@
         color: inherit;
         }
 
+        .g506-experience-picture {
+            height: 20rem !important; 
+            width: 20rem !important; 
+            border: solid 3px white !important;
+        }
+        .g506-experience-text {
+            width: 95%; 
+            margin-top: 9.2rem;
+            font-size: 1rem;
+        }
+        .g506-welcome-text {
+            font-size: 1.5rem;
+        }
+        .g506-welcome-text-normal {
+            font-size: 1.1rem;
+        }
+        .g506-notification-text {
+            font-size: 1.05rem;
+        }
+        .g506-notification-text-normal {
+            font-size: 0.9rem;
+        }
+        .g506-experience-text-bold {
+            font-size: 1.05rem;
+        }
+        .g506-contribution-text {
+            font-size: 1.05rem;
+        }
+
+        .g506-profile {
+            filter: opacity(0.75) !important;
+            transition: 100ms;
+        }
+        
+        .g506-profile:hover {
+            filter: opacity(1) !important;
+            transition: 100ms;
+        }
+
+        .g506-button {
+            filter: opacity(0.75) !important;
+            border-radius: 0.8rem !important;
+            transition: 100ms;
+        }
+
+        .g506-button:hover {
+            filter: opacity(1) !important;
+            transition: 100ms;
+        }
+
+        .g506-icons {
+            filter: opacity(0.75) !important;
+            transition: 100ms;
+        }
+
+        .g506-icons:hover {
+            filter: opacity(1) !important;
+            transition: 100ms;
+        }
+
+        .g506-border {
+            border-radius: 0.8rem !important;
+        }
+
+        @media only screen and (max-width: 400px) {
+            .g506-experience-picture {
+                height: 16rem !important; 
+                width: 16rem !important; 
+                border: solid 3px white !important;
+            }
+            .g506-experience-text {
+                width: 94%; 
+                margin-top: 7.2rem;
+                font-size: 0.8rem;
+            }
+            .g506-welcome-text {
+                font-size: 1.05rem;
+            }
+            .g506-welcome-text-normal {
+                font-size: 0.9rem;
+            }
+            .g506-notification-text {
+                font-size: 1.05rem;
+            }
+            .g506-notification-text-normal {
+                font-size: 0.9rem;
+            }
+            .g506-experience-text-bold {
+                font-size: 1.05rem;
+            }
+            .g506-contribution-text {
+                font-size: 1.05rem;
+            }
+            .g506-explain-text-normal {
+                font-size: 0.9rem;
+            }
+            .g506-showcase-images {
+                max-height: 12rem;
+                max-width: 25rem;
+            }
+        }
+
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.0/css/all.css" />
@@ -10192,47 +10297,21 @@
 </head>
 
 <body style="background: var(--primary); width: 100% !important; padding-right: 15px !important; padding-left: 15px !important; padding-top: 15px !important; padding-bottom: 15px !important; margin-right: auto !important; margin-left: auto !important;">
-    <div class="pos-f-t">
-        <div class="collapse container text-center" id="navbarToggleExternalContent">
-            <form class="container-fluid justify-content-start p-3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 p-2">
-                            <a href="index.html" class="btn btn-secondary rounded-0 w-100 fw-bolder bg-transparent text-white border-bottom border-0 text-uppercase navbarB" style="background-color: #1e1e1e !important; filter: opacity(0.5);"><i class="fas fa-mug-hot fw-bolder"></i> Home</a>
-                        </div>
-                        <div class="col-md-4 p-2">
-                            <a href="/releases/" class="btn btn-secondary rounded-0 w-100 fw-bolder bg-transparent text-white border-bottom border-0 text-uppercase navbarB" style="background-color: #1e1e1e !important; filter: opacity(0.5);"><i class="fas fa-folder-open fw-bolder"></i> Releases</a>
-                        </div>
-                        <div class="col-md-4 p-2">
-                            <a href="#soonTM" class="btn btn-secondary rounded-0 w-100 fw-bolder bg-transparent text-white border-bottom border-0 text-uppercase navbarB" style="background-color: #1e1e1e !important; filter: opacity(0.5);"><i class="fas fa-code fw-bolder"></i> Projects</a>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <nav class="navbar navbar-dark slide" style="background: rgba(255,255,255,0.02);">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </nav>
-    </div>
 
     <info>
-        <div class="py-1">
-            <div class="alert alert-warning text-center rounded-0 border-0 my-0" style="background-color: rgba(255,255,255,0.02);" role="alert">
+        <div class="g506-border py-1">
+            <div class="alert alert-warning text-center rounded-0 border-0 my-0" style="background-color: var(--foreground);" role="alert">
                 <h3 class="alert-heading text-white"><i class="fas fa-exclamation-triangle"></i> Error</h3>
-                <a class="text-white font-weight-normal">Error 404 Not Found</a>
+                <a class="g506-button text-white font-weight-normal" style="background-color: var(--interactable) !important; filter: opacity(0.5);" >Error 404 Not Found</a>
                 <a href="index.html" class="my-2 btn btn-secondary rounded-0 w-100 fw-bolder bg-transparent text-white border-bottom border-0 text-uppercase navbarB text-center" style="background-color: #1a1a1a !important; filter: opacity(0.5);"><i class="fas fa-mug-hot fw-bolder"></i> Return to the home page.</a>
             </div>
         </div>
     </info>
 
     <custom>
-        <div class="p-5" style="background: rgba(255,255,255,0.02);">
-            <div class="p-5">
-                <div class="media embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3560w_eOmmY?start=55;loop=1" style="filter: grayscale(100%);" allowfullscreen></iframe>
-                </div>
+        <div class="g506-border py-2 px-2 my-1" style="background: var(--foreground);">
+            <div class="g506-border media embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3560w_eOmmY?start=55;loop=1" style="filter: grayscale(100%);" allowfullscreen></iframe>
             </div>
         </div>
     </custom>
